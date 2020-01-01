@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-01T06:57:30.959Z</updated>
+    <updated>2020-01-01T16:46:03.355Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.1.1]]></title>
+        <id>https://andyblocker.github.io/post/202011</id>
+        <link href="https://andyblocker.github.io/post/202011">
+        </link>
+        <updated>2020-01-01T16:42:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>第一周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第一周摘要。</p>
+<!-- more -->
+<h2 id="11">1.1</h2>
+<p>没有完成太多事情。搭好了这个，搬运了死亡终结的摘抄。晚上去看了元旦晚会。回来吃昀迪的生日蛋糕以后看他们玩Stick Fight。不知道这样子的流水账能写多久，不过也许慢慢这么记录也能写下点什么吧。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[死亡终结]]></title>
         <id>https://andyblocker.github.io/post/end-of-death</id>
