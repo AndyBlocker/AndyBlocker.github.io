@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-02T15:37:53.067Z</updated>
+    <updated>2020-01-03T15:45:28.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.1-1.2]]></title>
+        <title type="html"><![CDATA[2020.1.1-1.3]]></title>
         <id>https://andyblocker.github.io/post/202011</id>
         <link href="https://andyblocker.github.io/post/202011">
         </link>
@@ -27,6 +27,11 @@
 给那个站点开了个头，写了时间、消息区域和事件弹出窗口的框架。说好是Vue到最后又变成了纯js。这次希望能做的精致一点完整一点，不过一件事拖久了难免会失去耐心，也许提高效率快速把手上的事情都做完也是一种让人感觉不到自己三分钟热度的办法。不过也许还应该写一个更新日志之类的，单独记录每天的进度和想法，不然想出来的实现很容易忘掉。<br>
 视频很微妙的根本没有人看，是这次发的时间碰上了各大up的更新时间导致被刷下去的很快，或者是前几次投稿有所谓的“新人照顾”，还是说之前随手录的东西过5k实际上应该很高兴？下次发（如果有）的话也许可以尝试避开高峰期，试试看到底问题哪里。<br>
 每七天按照之前记录的东西总结一下这周干了什么或许不错。</p>
+<h2 id="13-周五">1.3 周五</h2>
+<p>这个学期的第一节课和最后一节课都是数分，虽然去了以后基本没干什么事情。明天开始复习数分，也许是做点卷子谢谢总结之类的。<br>
+那个站点写了个顶端栏写了个状态栏，感觉开了个头以后后面的工作相对的能轻松一点了。这样靠区块的方法去实现我觉得思路应该是正确的，也方便把每个位置的更新封装成函数，整体脚本的逻辑就会更清楚一些。不过是否应该把更多的css放到同一个文件里？感觉header标签里有太多东西了。或者新建一个专门用来引用的html，再在index里引用它？待考虑。<br>
+没有思修课和形式与政策之后看书的安排很麻烦，不过其实很多时候从平时挤一点时间大概会好一些。有的零散时间还是欠安排。希望寒假里看书能快一些。<br>
+还没找到什么特别想练的曲子。之前看的曲子仔细一想如果不管不顾的去练是显然过于好高骛远而且会花费大量时间走弯路的。循序渐进好了。</p>
 ]]></content>
     </entry>
     <entry>
