@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-06T16:58:12.200Z</updated>
+    <updated>2020-01-07T14:40:04.014Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,14 +11,18 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.1-1.6]]></title>
+        <title type="html"><![CDATA[2020.1.1-1.7]]></title>
         <id>https://andyblocker.github.io/post/202011</id>
         <link href="https://andyblocker.github.io/post/202011">
         </link>
         <updated>2020-01-01T16:42:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>第一周摘要。</p>
+        <summary type="html"><![CDATA[<blockquote>
+<p>第一周摘要。</p>
+</blockquote>
 ]]></summary>
-        <content type="html"><![CDATA[<p>第一周摘要。</p>
+        <content type="html"><![CDATA[<blockquote>
+<p>第一周摘要。</p>
+</blockquote>
 <!-- more -->
 <h2 id="11-周三">1.1 周三</h2>
 <p>没有完成太多事情。搭好了这个，搬运了死亡终结的摘抄。晚上去看了元旦晚会。回来吃昀迪的生日蛋糕以后看他们玩Stick Fight。不知道这样子的流水账能写多久，不过也许慢慢这么记录也能写下点什么吧。</p>
@@ -48,6 +52,12 @@
 不过看起来住在这里真的就是什么要求也没有，我也没有什么复习的需求——反正一门都考不了。明天开始方舟主线通关以后应该就会开始看书或者继续做点什么事情了。这几天说不定还能写出一篇读书笔记之类的东西甚至写点什么。希望产出状态能更好一点。<br>
 听医生的意思大概是先隔离七天再做复查，不过我想隔离七天以后我直接说居家隔离大概就直接回家了吧…所以高铁票的事情大概不怎么需要担心。<br>
 坐在床上把电脑放在和床一样高的地方打字真的很不舒服，不过这几天再买一个合适的小桌板好像也挺麻烦的。就先这样吧。</p>
+<h2 id="17-周二">1.7 周二</h2>
+<p>前一天晚上打舟打到一点半左右才睡，想着反正起来也没什么事情干脆取消了闹钟睡到九点多钟才起床。有病友复查成功出去考数分的。上午基本在摸鱼，清清体力看看新闻，拿上室友送来的药基本就到中午了。<br>
+下午倒是正式开始了产出，从之前找到的文档走起到后面查到了css3的transition的特性，把ui里面感觉起来最麻烦的部分移动鼠标展示用hover+transition实现掉了，顺带把版面右边的状态和一些暂时不知道些什么的按钮调成了左对齐，这样的话无论是什么样子的设备都能保持一个相对漂亮的排版了。只是做的过程中想到了新的问题：当我需要添加新职员/skip的时候，我应该clone一个原有的节点再去修改内部的数据吗，还是说我应该预先保留那么多空位，然后一个一个向里面填充再把display打开？因为我并不知道clone以后我能不能修改节点的id，也不知道怎么去新建style之类的操作。到了写js的时候估计又得头疼一段时间。不过单论产出的话今天其实还是做了不少事情的。<br>
+饭后难得看了会书，《存在主义咖啡馆》的厚度确实比想象中的更难消磨…不过了解海德格尔萨特波伏娃这样的名家的思想的确是一件很有意思的事情。看到波伏娃《第二性》里关于爱情与异化部分的段落确实很让人有种难以描述的滋味。爱情中双方都追求着让对方爱自己的所有最终会演变成主体内在之类的形而上的争斗，这种情感从各种意义上来讲都让人感到奇妙了。不过who cares呢。<br>
+突然公布了线代成绩，90分挺惊喜的，但没想到均分都能有85，全班卷面满分能有20个。该说是不够努力摸鱼太多呢还是说该接受平庸呢…不过总之均绩点到了82。可惜考不了数分，六个学分的大课还挺诱人的。<br>
+原本说要写每周摘要之类的，不过这么写了一周看起来我好像并没有做什么事情，写一个很短的摘要列表看起来有点丢人。而且吃了咸味小药片以后头疼了一个下午，现在也没什么精力写这个摘要，所以还是算了吧。那么2020第一周姑且就这样。</p>
 ]]></content>
     </entry>
     <entry>
