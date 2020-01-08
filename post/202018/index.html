@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2020.1.8 | AndyBlocker</title>
+<meta name="description" content="直抵群星" />
+<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1578500039683">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://andyblocker.github.io">
+  <img class="avatar" src="https://andyblocker.github.io/images/avatar.png?v=1578500039683" alt="">
+  </a>
+  <h1 class="site-title">
+    AndyBlocker
+  </h1>
+  <p class="site-description">
+    直抵群星
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              2020.1.8
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-01-08
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>第二周摘要。</p>
+</blockquote>
+<!-- more -->
+<h2 id="18-周三">1.8 周三</h2>
+<p>前一天睡得挺早早上醒的也特别早，可惜爬起来以后还是迷迷糊糊的刷了半天手机清清理智最后看了一小会书。也许以后可以尝试想想办法让自己醒了以后能更快的进入状态——更快的完全清醒，这样子能节约不少时间让整个安排都紧凑一些，也可以避免因为起床以后迷迷糊糊理解能力低下的状态产生麻烦。<br>
+上午基本上没什么产出，基本上四处看看东摸摸西摸摸就过去了，简单看了一下electron的东西。带浏览器内核然后用node.js去做桌面端和之前我想到的某个乱七八糟的思路还挺像的，不过用浏览器内核肯定比搭载一整个浏览器再想办法隐藏浏览器的gui不知道高到哪里去了。仔细想一下如果能流畅的写前端相关的东西就能自己快速的开发桌面端的东西其实还挺诱人的，这也可能是Electron现在这么流行的原因之一吧。晚一点也许可以亲手试一试，不过目前还暂时没有什么想在桌面端去做的事情。<br>
+从昨天开始身上的水痘就在一直减少，到今天为止全身实际上只有两个能勉强算的上水痘的东西了，其余的红疹基本快速的结痂并且愈合了。或许是之前真的打过疫苗，或者说我得的实际上根本就不是水痘？明天早上和查房的医生提一下复诊的事情，如果能早一点出去考试那自然是最好的。毕竟缓考意味着明年这个时候的压力，现在高兴了到时候的麻烦事就多了。<br>
+中午过于无所事事甚至下了王者，不过现在能发现我实际上是能约束住自己的，这个游戏也确实不太能给我带来什么快乐之类的了。所以想好了打到输为止立刻删游戏，实际操作中第二盘开始就已经有点不耐烦了，最后在第五盘成功输掉游戏果断删掉。果然比起打游戏可能做点什么别的事情可能更能让人有成就感吧。<br>
+下午开始磨磨蹭蹭还是写了一点东西。仔细想了一下抽卡的时候并不一定要三选一，这样又可以少做一个div相关的版面问题了。把两个box里的内容整个调好以后，成就和科技两个版面暂时先搁置一下，css+html部分的原型就基本做完了。然后做了简单的初始化，把感觉起来应该比较常用的一些功能封装成了函数，中间又涉及到向函数传入不定数量参数的问题所以中间补习了arguement相关的东西。感觉这个地方还挺神奇的，传入不定数量的参数被放在了一个类似数组的东西里面，甚至自带length属性可以很轻松的了解到到底传入了多少也可以直接去访问，这一点上js还是挺方便的。又做了左侧栏的消息传入和跳出文本框+按钮形式的事件提醒，不过在如何获取点击了哪个按钮的时候卡住了。如果直接把相关的js操作每次都绑定到按钮上，给这个函数传入的参数就会特别的长（内容+js操作），但是不直接绑定的话又涉及到怎么去确认用户已经按下了按钮。按下按钮改变特定值再根据特定值的内容反推按下了哪个按钮很容易，但是现在的难点是如何知道用户已经按下了按钮。最后查到能去监听click事件，不过暂时还没有弄明白这个过程究竟是怎么实现的也没能写出一个样例。明天继续做这个好了。<br>
+校医院的饭菜还是一如既往的不行，不过托室友送来了汉堡王。能大口摄入高热量高蛋白的垃圾食品确实能给人带来幸福感，不过还是尽量控制少吃为妙。下个学期也该考虑锻炼身体的事情了。<br>
+没怎么写导论课的论文，不过我觉得在有大计基那篇论文的基础上再编个1k字应该挺简单的。<br>
+大概是之前在wiki上写过一点东西的原因，感觉现在已经很适应用markdown去写点什么了。而且最关键的是能适应并且习惯每天在这里写点什么，到了点能想起来该写点什么了。希望这个能很快的养成习惯。今天写了好多啊。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#18-%E5%91%A8%E4%B8%89">1.8 周三</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://andyblocker.github.io/post/202011">
+              <h3 class="post-title">
+                2020.1.1-1.7
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
