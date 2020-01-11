@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-10T16:28:01.414Z</updated>
+    <updated>2020-01-11T15:43:38.960Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.8-1.9]]></title>
+        <title type="html"><![CDATA[2020.1.8-1.11]]></title>
         <id>https://andyblocker.github.io/post/202018</id>
         <link href="https://andyblocker.github.io/post/202018">
         </link>
@@ -46,6 +46,12 @@
 回来以后基本上在摸鱼，继续完成了昨天生成职员的剩下的部分，然后把招募失败的判定和新职员的生成全部加进去了。如果补上技能名称和sp职员的名字，面包期待的抽卡部分就基本做完了。不过我想做到每个功能的时候至少得做到能用，所以离发布大概还差好几个功能。按钮功能的绑定写成了局部的函数，感觉不是特别的杂乱，所以先这么写着好了。一个比较麻烦的事情是每次vscode都瞎改编码，今天打开以后全都变成了乱码。要是每一次都要手动去修中文文字的话往后带内容的输入会非常麻烦，晚一点得想个办法去把默认的编码格式改成UTF-8。总归还是写了一点东西，聊胜于无吧。<br>
 晚上拿到了之前新生赛的奖状，三等奖看起来真有点…丢人。最近好久没有打比赛做题了，完全指望在冬训的时候学好像也不现实，晚一点应该从头开始慢慢补补算法和数据结构，刷刷题打打比赛，还能顺便水点题解/学习笔记什么的。<br>
 重新摸到琴的感觉真好。</p>
+<h2 id="111-周六">1.11 周六</h2>
+<p>出来以后就怠惰了。八点多钟起床把要考试的室友都喊起来，然后就开始长时间的无所事事。好在是写完了导论课的结课论文，随手刚好凑出了2020个字。借着大数据专业的名头胡扯了一点乱七八糟的东西，然而反过来看自己写的东西都觉得没什么逻辑。<br>
+然后就是和室友一起打游戏。今天是真正没有产出的一天。而且最近发现自己的自控力越来越低，这是比较严重的需要注意的问题。<br>
+继辉夜之后又找到了新的下饭番理科生，看了第一集以后完全猜不到后面会是怎么展开，可能只有这样的番才会有兴趣去看吧。<br>
+寒假里还是多找一点控制细节的曲子磨一磨，顺带练一练DEPAPEPE的相关曲目吧。下个学期如果有机会，希望上台的机会能多一点。<br>
+这周的日平均字数比上周多了很多，这次算是拖累平均值了。</p>
 ]]></content>
     </entry>
     <entry>
