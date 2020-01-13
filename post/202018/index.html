@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2020.1.8-1.12 | AndyBlocker</title>
+<title>2020.1.8-1.13 | AndyBlocker</title>
 <meta name="description" content="直抵群星" />
-<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1578845448464">
+<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1578936185120">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://andyblocker.github.io">
-  <img class="avatar" src="https://andyblocker.github.io/images/avatar.png?v=1578845448464" alt="">
+  <img class="avatar" src="https://andyblocker.github.io/images/avatar.png?v=1578936185120" alt="">
   </a>
   <h1 class="site-title">
     AndyBlocker
@@ -73,14 +73,14 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              2020.1.8-1.12
+              2020.1.8-1.13
             </h2>
             <div class="post-info">
               <span>
                 2020-01-08
               </span>
               <span>
-                14 min read
+                16 min read
               </span>
               
                 <a href="https://andyblocker.github.io/tag/MynfIM62U" class="post-tag">
@@ -128,6 +128,11 @@
 今天的内容主要是把skip生成的部分按照之前生成职员的逻辑写出来，因为html部分已经有了架构和模板所以写skip对象的属性的时候也没动什么脑子，按照规律慢慢悠悠的往坑里填东西就好了。顺带还补了一点sp职员和技能的文本，没想到技能类的文本到写的时候会这么难，而且现在能立刻找到的sp职员少了好多，之前的事情的影响加上不少朋友退坑还是很麻烦啊…也许该熟悉一下wiki里开始活跃的其他人了。   不过在做节点复制的时候想到一个问题：当我删除一个职员/skip的时候，我应该怎么处理html标签里的id？之前那样想着用一个大数组装各种对象确实方便读取数据了，但是相应的在中间项被删除之后再输出就会变得很麻烦。现在的想法是要么在每次做删除操作的时候顺带把下面部分所有的id编号全部上移一个，要么把删除职员的操作变成标记删除，每次加入新的职员的时候还是照旧向下添加元素，这么写似乎可以加入复活之类的元素——毕竟之前被删除掉的元素实际上依旧被保存了，复活操作做起来挺方便的。不过老是想着往里面加新东西很有可能最后会因为太麻烦而弃坑，这次到底要不要这么做还是再观望一下好了。<br>
 练琴的话基本是拿下了昭和ロマンス，就是练旧了左手小拇指都有点疼…想起之前戴老师嫌弃我少用一根手指，可能左手小拇指右手无名指练琴的时候真的就会下意识的不去用吧。也就是说基本功确实还差的很远，慢慢练吧。另一间神奇的事情是，装上卡农口以后居然只能录在左声道了。考虑这个构造我很怀疑是不是话筒只有左声道而吉他口只有右声道…或者是我的设置有点问题，晚一点问问他们好了。<br>
 打这篇流水账的时候空格键翘起来了好几次，不知道是定制的键帽不太合适的原因还是单纯因为我打字按的位置不太对。感觉现在每天写的大头主要是站点相关的东西…差不多变成开发日志了。还是得从日常生活里找更多值得写的东西吧，不然总有一天会连今日无事可记都不想写而再次荒废的。</p>
+<h2 id="113-周一">1.13 周一</h2>
+<p>算是考试周的最后一天，虽然因为水痘的问题实际上最后的这几天已经进入了放假状态。不过看着室友出去考思修又急急忙忙去参加假期前的年级大会，又想起明天要起个大早赶去高铁站，还真有一种放假的气氛。<br>
+上午一个人在宿舍的时间基本在摸鱼，又填了一点点技能描述的文本以后就没干什么别的事情了。吃了本学期最后一餐汉堡王，今天基本都在打舟以及和室友一起打游戏的状态下度过了。不过明天在车上会有五个小时左右的时间，虽然必须和琴挤在一个狭小的座位上，不过我想我大概还是会看一点书。今天就当是学期最后一天好好休息一下好了。<br>
+晚上突然发现寒假集训的时候，学校开放的宿舍并不包含我现在住的地方，而且留校分配宿舍好像还要在20号左右办一些比较麻烦的手续，不知道怎么解决。先这么放着吧。<br>
+由于打了太久游戏导致错过了平时写这个的时间，现在我正趴在床上非常别扭的敲着笔记本的键盘。回家之后睡觉的时间会变多，而且睡觉之前基本也不会碰电脑了，所以这篇总结大概会被提前到十点半左右，不过那之后阅读中想到的东西就会被延迟到第二天再写。也不知道寒假里能不能写点什么阅读相关的事情。</p>
 
               </div>
               <div class="toc-container">
@@ -139,6 +144,7 @@
 <li><a href="#110-%E5%91%A8%E4%BA%94">1.10 周五</a></li>
 <li><a href="#111-%E5%91%A8%E5%85%AD">1.11 周六</a></li>
 <li><a href="#112-%E5%91%A8%E6%97%A5">1.12 周日</a></li>
+<li><a href="#113-%E5%91%A8%E4%B8%80">1.13 周一</a></li>
 </ul>
 </li>
 </ul>
