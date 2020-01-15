@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-15T12:44:09.974Z</updated>
+    <updated>2020-01-15T14:40:22.687Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.1.15]]></title>
+        <id>https://andyblocker.github.io/post/2020115</id>
+        <link href="https://andyblocker.github.io/post/2020115">
+        </link>
+        <updated>2020-01-15T14:29:11.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>第三周摘要。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>第三周摘要。</p>
+</blockquote>
+<!-- more -->
+<h2 id="115-周三">1.15 周三</h2>
+<p>住在家里意味着大量的空闲时间以及大量的睡眠时间。从十一点半开始一直睡到第二天早上将近八点，八个多小时的睡眠比在校每天随机睡觉的感觉好太多了。早上起来悠哉的看着新闻吃早饭，又可以安安心心的摸鱼。又得感叹一句在家里真好啊。<br>
+今天基本也没有太多产出，主要完善了之前没有写完的skip的生成问题，才注意到之前照搬的标签id改名里面写错了不少东西…好在生成的过程已经基本做完了。唯一比较头疼的问题是描述部分，计划使用一个最多为999的随机数指代描述，三位上的数字分别匹配描述中的三个部分。这么做唯一的问题就是写文本的时候需要有足够的通用性，这样才不至于让文本搭配起来有僵硬或者奇怪的感觉。之前比较头疼的移除问题还没有做，可能会拖到晚一点再下手。做完了skip的添加，整个界面上会产生图形变化的内容就都做完了，接下来就是专心处理js方面的问题。<br>
+练琴方面，把headway调成了nayuta的条线，老琴还是留在标调。找一个up主要到了水星的谱子，虽然之前喊着又因为三分钟热度放弃了，不过也许还是可以试一试？说不定这一次的热度能够支持到整体做的差不多。卡宏鼓部分大概只能用gtp去合成，电吉他部分的点缀可以用老琴+AU效果器调着看，贝斯大概可以借着别人的试试看，最麻烦的果然还是唱的问题。<br>
+研究为什么打字突然变卡同步也失败的问题的时候不慎把上周的总结删掉了，还好可以直接从网页上复制过来。客户端在字很多的时候变卡也有其他人提了issue，看看下个版本作者能不能把效率提高吧。<br>
+春节可能会购入Screeps，虽然大概率和空洞骑士群星之类的一样又是吃灰，不过这种真正硬核的编程游戏感觉还是挺有意思的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.1.8-1.14]]></title>
         <id>https://andyblocker.github.io/post/202018-114</id>
