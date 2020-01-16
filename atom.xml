@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-15T14:40:40.707Z</updated>
+    <updated>2020-01-16T14:42:52.382Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.15]]></title>
+        <title type="html"><![CDATA[2020.1.15-1.16]]></title>
         <id>https://andyblocker.github.io/post/2020115</id>
         <link href="https://andyblocker.github.io/post/2020115">
         </link>
@@ -30,6 +30,10 @@
 练琴方面，把headway调成了nayuta的条线，老琴还是留在标调。找一个up主要到了水星的谱子，虽然之前喊着又因为三分钟热度放弃了，不过也许还是可以试一试？说不定这一次的热度能够支持到整体做的差不多。卡宏鼓部分大概只能用gtp去合成，电吉他部分的点缀可以用老琴+AU效果器调着看，贝斯大概可以借着别人的试试看，最麻烦的果然还是唱的问题。<br>
 研究为什么打字突然变卡同步也失败的问题的时候不慎把上周的总结删掉了，还好可以直接从网页上复制过来。客户端在字很多的时候变卡也有其他人提了issue，看看下个版本作者能不能把效率提高吧。<br>
 春节可能会购入Screeps，虽然大概率和空洞骑士群星之类的一样又是吃灰，不过这种真正硬核的编程游戏感觉还是挺有意思的。</p>
+<h2 id="116-周四">1.16 周四</h2>
+<p>昨天晚上因为喝了红茶直到将近两点才睡着，因此早上一直睡到九点才起床。出门吃了热干面，到了家里没坐多久又被拉出去吃披萨。<br>
+路上在书店里逛了逛。“仿生人是否会梦到电子绵羊”的梗原来出自银翼杀手，单看这个其实挺感兴趣的，只可惜“讨论人与机器的关系”这样的主题的书看的实在是太多了。契诃夫的选集或许不错，不过最后还是没有买。不知道春节期间网购书之类的东西会不会很慢或者干脆年后再发货。也许可以买禅与摩托车维修技术和一些其他的书。<br>
+没什么产出也没有练琴，摸鱼的一天的确没有太多值得记下来的东西。进永旺的时候帮后面的人扶了门帘，小姐姐还挺惊讶的。</p>
 ]]></content>
     </entry>
     <entry>
