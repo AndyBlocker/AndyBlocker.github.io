@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-01-28T12:24:44.531Z</updated>
+    <updated>2020-01-30T12:58:03.557Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.1.29-1.30]]></title>
+        <id>https://andyblocker.github.io/post/2020129</id>
+        <link href="https://andyblocker.github.io/post/2020129">
+        </link>
+        <updated>2020-01-30T12:50:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>第五周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第五周摘要。</p>
+<!-- more -->
+<h2 id="129-周三">1.29 周三</h2>
+<p>运动还是羽毛球。久违的打了一场div2的CF。<br>
+A题思路基本就是凑更多的位数，结果出答案的时候才后知后觉的想到实际上只有两种情况。过了A以后发现B没什么人过了就开了C，写了一个暴力的方法结果一直tle，这个时候反过来再做B已经没有什么时间了。而且仔细想想B应该是不会做的，C题的二分也不太能很顺畅的写出来。<br>
+磨磨蹭蹭到了两点钟左右才睡，之前还想着打完比赛就立刻写这个结果也忘了。第二天补上的时候已经忘记除了比赛之外该记什么了。</p>
+<h2 id="130-周四">1.30 周四</h2>
+<p>早上八点钟才起来，结果打了两个多小时的羽毛球。练琴看书玩手机又过了一整天。开学之后还是得加强运动，这几天打羽毛球右手已经有很明显的充血酸疼的感觉了。多运动加强身体素质，以后大概会少很多麻烦事。至少得早点把学校要求的跑完。<br>
+脑袋有点昏昏沉沉，今天大概会早一点睡觉。不知道是运动之后着凉了还是前一天睡得太晚了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.1.22-1.28]]></title>
         <id>https://andyblocker.github.io/post/2020122</id>
