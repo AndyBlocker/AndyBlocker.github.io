@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-01T11:56:51.571Z</updated>
+    <updated>2020-02-02T14:27:46.576Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.29-2.1]]></title>
+        <title type="html"><![CDATA[2020.1.29-2.2]]></title>
         <id>https://andyblocker.github.io/post/2020129</id>
         <link href="https://andyblocker.github.io/post/2020129">
         </link>
@@ -34,6 +34,9 @@ A题思路基本就是凑更多的位数，结果出答案的时候才后知后�
 <h2 id="21-周六">2.1 周六</h2>
 <p>一整天没干什么，脖子上的淋巴结还没有消。今天不知道怎么回事还是觉得很累，好像也不知道该写些什么。晚一点大概会开始学习了。<br>
 就先这样吧。</p>
+<h2 id="22-周日">2.2 周日</h2>
+<p>难得能在当天晚上写这个，虽然今天主要在练琴。发现中间段练不好的根本原因是左手横按没办法坚持那么久，手劲也不是一天两天能连起来的，所以把intro和结尾连在一起糊弄了一下，好像也还行，晚一点说不定可以录一下试试看。<br>
+晚上又有比赛但是这次不参加，从明天开始可能得开始干活了。计划是继续刷刷洛谷，碰到完全不会的就去学相应的内容。怠惰太久确实得干活了。</p>
 ]]></content>
     </entry>
     <entry>
