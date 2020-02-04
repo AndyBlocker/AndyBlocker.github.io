@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-04T03:38:53.990Z</updated>
+    <updated>2020-02-04T14:56:32.405Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.1.29-2.3]]></title>
+        <title type="html"><![CDATA[2020.1.29-2.4]]></title>
         <id>https://andyblocker.github.io/post/2020129</id>
         <link href="https://andyblocker.github.io/post/2020129">
         </link>
@@ -40,6 +40,12 @@ A题思路基本就是凑更多的位数，结果出答案的时候才后知后�
 <h2 id="23-周一">2.3 周一</h2>
 <p>明明晚上有机会写却拖到了第二天。上午一直执着于把市区剿灭打到400，结果最后打了一上午也没有成功。下午也是悠哉的练练琴玩玩手机基本就过去了。晚上帮表妹看了看数学，这几天大概得花不少时间辅导了。<br>
 晚上看书。很神奇的是在摩托车艺术里看到了道德经，作者感觉到的“良质”最后又归到了一元论的“道生万物”上面，思路变得越来越神秘了…不过好消息是书快看完了。</p>
+<h2 id="24-周二">2.4 周二</h2>
+<p>上午基本在帮表妹复习数学。没想到我还能做不少高三时候的题目，原本以为一个学期没碰应试能力应该下降不少。看来两三年练出来的东西还是没那么容易丢掉，也希望我在高中养成的其他习惯、记住的各种奇妙小知识也能一直保存下来吧。<br>
+练了一段时间琴，感觉能磕磕绊绊弹出My Home Town的中间段了，再练一段时间让泛音的声音更突出一点应该也能录下来。寒假好像和平时比起来多的是练琴的时间。<br>
+下午收到了意料之外的高一同桌的消息，单方面的说了不少乱七八糟的发言。不过反正想听的大概也就是这些吧，不过是借题发挥随口说点打发时间。随他吧。<br>
+晚上有一场div3但是没有打，集训和上学的时间都定下来了。虽然每次都在喊要学习了结果拖拖拉拉又到了这个时候。没有看书也没有写代码，倒是在A岛逛了一小会。<br>
+大概是这周每天都处于“今日无事可记”的状态，即使写到最后一天也没有像之前一样卡的厉害。不知道该高兴还是该反省。不过大概并不是每一天都有那么多值得去记录的事情，又或者每天其实都有很多事情值得记录下来？</p>
 ]]></content>
     </entry>
     <entry>
