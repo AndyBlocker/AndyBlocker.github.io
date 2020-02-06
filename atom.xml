@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-06T13:32:05.460Z</updated>
+    <updated>2020-02-06T13:32:15.364Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -14,22 +14,6 @@
         <title type="html"><![CDATA[2020.2.5-2.6]]></title>
         <id>https://andyblocker.github.io/post/202025-26</id>
         <link href="https://andyblocker.github.io/post/202025-26">
-        </link>
-        <updated>2020-02-06T13:29:30.000Z</updated>
-        <summary type="html"><![CDATA[<p>第六周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第六周摘要。</p>
-<!-- more -->
-<h2 id="25-周三">2.5 周三</h2>
-<p>看了书听了歌练了琴。原本好像真的有不少东西想写出来结果第二天上午又忘记了。有点后悔。大概是晚上翻网盘的时候看到了不少初中时候照片的感想吧。不该拖拖拉拉的。</p>
-<h2 id="26-周四">2.6 周四</h2>
-<p>练琴为主，下了一天雨。又开始看小说了，不过好在培训的时间已经整个确定下来了，十号开始就会真正干活了。到时候大概会写不少学习笔记结题报告之类的东西。希望。这几天就再怠惰一下吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.2.5]]></title>
-        <id>https://andyblocker.github.io/post/202025</id>
-        <link href="https://andyblocker.github.io/post/202025">
         </link>
         <updated>2020-02-06T13:29:30.000Z</updated>
         <summary type="html"><![CDATA[<p>第六周摘要。</p>
