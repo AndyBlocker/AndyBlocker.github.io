@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-08T14:40:49.960Z</updated>
+    <updated>2020-02-10T15:45:08.508Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.5-2.8]]></title>
+        <title type="html"><![CDATA[2020.2.5-2.10]]></title>
         <id>https://andyblocker.github.io/post/202025</id>
         <link href="https://andyblocker.github.io/post/202025">
         </link>
@@ -34,6 +34,14 @@
 主要打舟的一上午和被小孩子吵到什么也干不成的下午和晚上。细想一下我大概不是不喜欢小孩子，而是不喜欢行为异常而且无法沟通、并且我并不想与其搞好关系的人。<br>
 唐帮忙写了大部分导员要求的东西，交了两次以后缝合了一下两个内容交给了导员。晚点大概该寄点零食或者什么别的东西，不过还是得等到开学之后了。<br>
 没有更多值得记下来的东西。</p>
+<h2 id="29-周日">2.9 周日</h2>
+<p>没干啥，主要打舟，没有太多值得写的东西。其实主要是拖太晚已经忘记要写什么了。手上冻得更厉害了，右手小指和食指都有冻伤，脚上也有一点。但是奇妙的是左手没有什么影响，可能是练琴的时候左手的运动量比右手大很多所以左手能热起来？练琴的时候也有类似的感觉。<br>
+明天开始上课了。</p>
+<h2 id="210-周一">2.10 周一</h2>
+<p>集训第一天。七点钟醒来等闹铃结果还是在床上玩手机玩到七点四十才起床。集训内容和暑假里找到的ppt没有太多区别，stl部分没啥可听的所以还是边听边玩。课后练习一口气留了十二道题真的花了巨量的时间才做完。每道题都不算太难，但总有一点奇妙的地方卡住不让人一口气a掉，也可能是我太久没有做题导致写代码能力下降太多了，这几天要一鼓作气多学点东西了。<br>
+不是很想写这十二个题相关的东西，且不说J到现在我还是TLE，有的题因为偷懒直接贴了别人的代码。就是这样还做到了快十二点钟才完全结束。这个状态并不算好。慢慢加油了。<br>
+和一个尝试听课但是受了打击的姑娘聊了几句。有强烈意愿想学编程并且愿意投入课余时间的姑娘真是少见。<br>
+是李的生日，回了“谢谢你”。这一边终于可以慢慢淡掉了吗。</p>
 ]]></content>
     </entry>
     <entry>
