@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-10T15:45:08.508Z</updated>
+    <updated>2020-02-11T23:59:21.706Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.5-2.10]]></title>
+        <title type="html"><![CDATA[2020.2.5-2.11]]></title>
         <id>https://andyblocker.github.io/post/202025</id>
         <link href="https://andyblocker.github.io/post/202025">
         </link>
@@ -42,6 +42,11 @@
 不是很想写这十二个题相关的东西，且不说J到现在我还是TLE，有的题因为偷懒直接贴了别人的代码。就是这样还做到了快十二点钟才完全结束。这个状态并不算好。慢慢加油了。<br>
 和一个尝试听课但是受了打击的姑娘聊了几句。有强烈意愿想学编程并且愿意投入课余时间的姑娘真是少见。<br>
 是李的生日，回了“谢谢你”。这一边终于可以慢慢淡掉了吗。</p>
+<h2 id="211-周二">2.11 周二</h2>
+<p>集训第二天。昏昏沉沉一直到快八点中才起床，一边吃蛋炒饭一边听课。模拟好像也没有特别多值得写的东西，但是十五道题真的很多。今天还是写了不少代码，很多题都是自己想出来然后A掉的。而且今天做的也比昨天快不少，虽然开始的挺早不过晚饭后十五道题就全部解决了。希望以后每天都能一点一点的回复状态并且进步。最好是之后学新东西的情况下还能把每天的题都做完。<br>
+弹了十几分钟琴，怀疑有一点受潮了，琴盒里有潮湿的感觉而且琴也有点打品。明天得想个办法。<br>
+今天的是在关网以后写的，下次有机会一起同步了。<br>
+一转眼好像写了好几周这个了，大概已经是习惯了。</p>
 ]]></content>
     </entry>
     <entry>
