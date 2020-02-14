@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-12T14:30:01.081Z</updated>
+    <updated>2020-02-14T14:15:02.576Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.12]]></title>
+        <title type="html"><![CDATA[2020.2.12-2.14]]></title>
         <id>https://andyblocker.github.io/post/2020212</id>
         <link href="https://andyblocker.github.io/post/2020212">
         </link>
@@ -24,6 +24,12 @@
 <p>集训第三天。简单数据结构约等于STL灵活使用课。今天的十道题倒是做的挺快，而且不少都是自己想然后高速实现的了。感觉已经基本进入了集训状态，每天写题的时候不怎么分心了。<br>
 下午打了一个多小时羽毛球，运动一下还是挺舒服的，就是不知道明天会不会手痛。<br>
 琴又不打品了，感到迷惑。</p>
+<h2 id="213-周四">2.13 周四</h2>
+<p>集训第四天。学的内容一下子变得难了起来，说是字符串入门结果内容是哈希和Trie。原本感觉有点跟不上，没想到在网上找了一道字典树的例题对着建树的过程敲了一边以后突然完全理解了。用结构体+malloc的方法去做了动态开点，结果E题不停的在TLE…群里的学长提了关于malloc的时间效率以及结构体因为需要对齐带来的额外空间占用的问题，可惜先入为主的学了以后数组法看了半天也没能很流畅的写出来。还需要修行啊。I题八数码问题听说很多次了，并不会IDA*就连普通的爆搜都打不好，只好放着了。<br>
+看了一小会漫画练了一小会琴，没有什么别的了。</p>
+<h2 id="214-周五">2.14 周五</h2>
+<p>集训第五天。今天讲排序和贪心，玩手机错过了大概三分钟的开头，没想到整堂课一共就讲了二十分钟不到。贪心和排序也许真的没什么值得讲的东西吧。刷水题也很快乐，一上午就直接把十二题都做完了，在八题的时候还短暂的成为了几分钟的rk1，拿了中间两题的FB。<br>
+下午是愉快的休息时间。仔细想了一下最近看的漫画，似乎以羞涩的初恋情侣笨拙的相互或者单方面的表达爱意的剧情出现了很多次。有点想要喜欢也想要被喜欢，不过还是吸收一点糖份以后继续保持现在这个样子就挺好吧。</p>
 ]]></content>
     </entry>
     <entry>
