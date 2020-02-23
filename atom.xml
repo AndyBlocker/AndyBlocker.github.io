@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-21T00:17:34.590Z</updated>
+    <updated>2020-02-23T03:22:42.208Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.2.19-2.22]]></title>
+        <id>https://andyblocker.github.io/post/2020219/</id>
+        <link href="https://andyblocker.github.io/post/2020219/">
+        </link>
+        <updated>2020-02-20T14:25:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>第八周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第八周摘要。</p>
+<!-- more -->
+<h2 id="219-周三">2.19 周三</h2>
+<p>集训第十天，主讲内容图论与搜索相关。今天讲课的感觉就比昨天明显好很多，无论是思路上的接收程度还是讲课的风格都比较适应，做题也相应的能跟上了。虽然从好几天之前开始就没有办法ak了，不过现在胜在大部分题目都是自己写的，最多也就看一下别人的思路然后自己完成大部分实现的过程。上午做题的时候突然想起私人FM，又收了几首新歌。<br>
+晚上集训群里聊起了之前的竞赛经历，在oierdb上搜过了才知道这个群里的oi爷一点都不少，甚至还有两个省队的。其他竞赛相关的也是特别的多。果然到了这种平台上遇到的人还是不一样。还是得找到更多自己独特一点的技能之类的，抱着一种比没学过的人强的心态去学肯定是会出问题的。</p>
+<h2 id="220-周四">2.20 周四</h2>
+<p>集训第十一天，主讲最短路和拓扑排序相关的算法。还是同一个人讲课，不过今天的内容还挺多的。SPFA的模板题没看题中是无向图照着有向图的板子交了七次一个人无限拉低正确率…感觉能磕磕盼盼自己把今天讲的几个内容都写出来了。<br>
+为了注册新的OJ上了之前的qq号，没事做翻访客的时候意外联系上了好多年（十年以上？）没联系的还在湖北时候的同学，对方现在也是同济的学生了。也就加上的时候简单聊了两句最后还是归于沉默。当时的关系再好十年不沟通一样会淡，更别说当时还是什么都不懂和什么人都能做朋友的时候。<br>
+线上年级大会很神奇，虽然乡下的网有点一言难尽。明天亲戚会送一点点收到的快递过来，可能得往脸上擦一点消炎药之类的，虽然说不是很在乎这些东西但是万一有比较严重的影响还是不太好。只能现在麻烦防范一下了。<br>
+晚一点说不定可以尝试着打打比赛之类的了，感觉这么些天还是有不少长进。大概。</p>
+<h2 id="221-周五">2.21 周五</h2>
+<p>集训第十二天，主讲最小生成树和并查集。并查集是真的很麻烦所以我最后全在用prim…没做什么别的事情，顺便写了禅与摩托车的读后感。</p>
+<h2 id="222-周六">2.22 周六</h2>
+<p>集训最后一次讲课，主讲树状数组和线段树。不知道怎么回事一整天都感觉状态不好而且很烦躁，随便做了一点题目然后就开始准备开学以后的事情了。水了一下返乡调查。明天结课总结赛。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.2.12-2.18]]></title>
         <id>https://andyblocker.github.io/post/2020212/</id>
