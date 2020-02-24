@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-23T14:43:10.001Z</updated>
+    <updated>2020-02-24T13:32:08.178Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.19-2.23]]></title>
+        <title type="html"><![CDATA[2020.2.19-2.24]]></title>
         <id>https://andyblocker.github.io/post/2020219/</id>
         <link href="https://andyblocker.github.io/post/2020219/">
         </link>
@@ -34,6 +34,9 @@
 <p>集训最后一次讲课，主讲树状数组和线段树。不知道怎么回事一整天都感觉状态不好而且很烦躁，随便做了一点题目然后就开始准备开学以后的事情了。水了一下返乡调查。明天结课总结赛。</p>
 <h2 id="223-周日">2.23 周日</h2>
 <p>总结赛。是真的很难，基本上只能两题签到的程度。集训这样也就告一段落了，感觉有很大的可能性没有办法进队，现在自己的水平也不足以参加各种比赛之类的。不过虽然说集训结束了但是明天就开学了，而且各种各样的作业又马上要来了。感觉还是有点累。</p>
+<h2 id="224-周一">2.24 周一</h2>
+<p>不需要集训的日子是真的惬意。早上多睡了快一个小时才爬起来，慢慢悠悠聊聊天泡一碗方便面当早餐以后听几节课写写作业就没什么事了。虽然昨天说要写英语的东西结果一不小心拖到了今天的ddl还被老师at了，写完以后顺手把作文也一起写了。以后应该还是要写每天的待办之类的东西，这个时候又开始怀念学校的双屏了，可以在竖屏的边角位置放一个好大的代办。<br>
+没干什么别的事情，明天可能会把这周的数学作业都写完然后研究一下别的作业之类的吧。</p>
 ]]></content>
     </entry>
     <entry>
