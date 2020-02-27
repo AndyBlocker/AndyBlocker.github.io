@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-02-24T13:32:08.178Z</updated>
+    <updated>2020-02-27T13:53:03.841Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,24 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.19-2.24]]></title>
+        <title type="html"><![CDATA[2020.2.26-2.27]]></title>
+        <id>https://andyblocker.github.io/post/2020226/</id>
+        <link href="https://andyblocker.github.io/post/2020226/">
+        </link>
+        <updated>2020-02-27T13:49:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>第九周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第九周摘要。</p>
+<!-- more -->
+<h2 id="226-周三">2.26 周三</h2>
+<p>不知不觉写了这么久了，虽然好像没有记下来什么有意义的事情。基本上没干什么事情怠惰了一整天，晚上下午练了一会琴，好像就没有什么别的值得说一说的事情了。</p>
+<h2 id="227-周四">2.27 周四</h2>
+<p>不算早起但是终于干活了。近代史发言，数分作业全部解决，准备开始英语的Group Work和其他作业。作业的事情还是不能指望队友…这个月可能都得我带头了。<br>
+剩余时间基本练琴听歌了，这段时间温度越来越高了，二十多度的天说来就来了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020.2.19-2.25]]></title>
         <id>https://andyblocker.github.io/post/2020219/</id>
         <link href="https://andyblocker.github.io/post/2020219/">
         </link>
@@ -37,6 +54,9 @@
 <h2 id="224-周一">2.24 周一</h2>
 <p>不需要集训的日子是真的惬意。早上多睡了快一个小时才爬起来，慢慢悠悠聊聊天泡一碗方便面当早餐以后听几节课写写作业就没什么事了。虽然昨天说要写英语的东西结果一不小心拖到了今天的ddl还被老师at了，写完以后顺手把作文也一起写了。以后应该还是要写每天的待办之类的东西，这个时候又开始怀念学校的双屏了，可以在竖屏的边角位置放一个好大的代办。<br>
 没干什么别的事情，明天可能会把这周的数学作业都写完然后研究一下别的作业之类的吧。</p>
+<h2 id="225-周二">2.25 周二</h2>
+<p>全天摸鱼。早上晚起吃面，整理了一下一周的任务以后基本就没干什么了。玩玩手机看看新闻好像一下子就过去了，突然又知道还有英语的mooc，作业又多了一点。感觉集训结束了以后好像一下子就怠惰下来了。<br>
+舟游的活动图好像确实没什么难度了，半个小时把突袭啥的全过了。</p>
 ]]></content>
     </entry>
     <entry>
@@ -441,36 +461,6 @@ A题思路基本就是凑更多的位数，结果出答案的时候才后知后�
 <p>想象全部这些事情。想象你的女儿尚且安好。或是，至少，想象她还活着。想象你很富足、你具有权力、你还活着，想象你是捕手而非受害者，你有着麻醉枪。想象你并不在这里。构想这些画面，让它们坚实而完整。</p>
 <p>集中注意力。你正在缓慢沉向上游扬子江的河底。祈祷你放置其中的塑料袋不会破裂吧。你甚至没有注意到你正在一个塑料袋中。但是不管如何，你的突触们正持续着放电，在苦痛与混乱之中尖叫着，在你只愿一死的时候强迫你保持清醒。</p>
 <p>所以想象吧，一直想象，这样你便能在这黑暗之中，在一些脆弱的时刻间能够避开这伤害。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020]]></title>
-        <id>https://andyblocker.github.io/post/2020/</id>
-        <link href="https://andyblocker.github.io/post/2020/">
-        </link>
-        <updated>2020-01-01T05:39:17.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>希望能坚持下去吧。</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>希望能坚持下去吧。</p>
-</blockquote>
-<!-- more -->
-<p>一直有想法但是缺少恒心，又老喜欢给自己找这样或者那样的借口，写博客的事情一直断断续续一拖再拖，之前建的wikidot后来也基本没有再更新过。这次又心血来潮建了这个站来每天写点什么。希望能坚持下去吧。</p>
-<p>值得回忆的事情没有多少，想做的事情倒是有一大堆。年初列的清单经常到了六月份左右就被忘得差不多了，这次写成文字，也许会好一点吧。</p>
-<ul>
-<li>ACM区域赛</li>
-<li>均绩点高于85</li>
-<li>用Vue重置那个站点</li>
-<li>体育锻炼，五个引体向上左右的水平</li>
-<li>读20本书，写相关随笔</li>
-<li>学五首歌，传到B站上</li>
-<li>看完西瓜书，用tf做一件能算的上有意思的东西</li>
-<li>控制花销，做一些能入账的事情</li>
-<li>做一个温和冷静的人</li>
-</ul>
-<p>没了。</p>
 ]]></content>
     </entry>
 </feed>
