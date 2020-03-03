@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-03-02T14:58:58.991Z</updated>
+    <updated>2020-03-03T14:50:19.876Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.2.26-3.2]]></title>
+        <title type="html"><![CDATA[2020.2.26-3.3]]></title>
         <id>https://andyblocker.github.io/post/2020226/</id>
         <link href="https://andyblocker.github.io/post/2020226/">
         </link>
@@ -39,6 +39,9 @@ pbds还是没怎么折腾清楚，以后有机会再慢慢看吧。晚上讲完�
 下午写英语又是quiz又是mooc的作业，不过还好两边都快速的解决了。翻了好久之前的聊天记录。<br>
 十五号又是新的比赛，这段时间好像一直没什么几乎写程序，还是得自己学点什么东西之类的。即使进不了校队，还是想多学学这方面相关的东西。<br>
 今天意外的比之前多写了不少，写到这里突然又想起来我好像有好久没更新过列表也没写过站点了。好怠惰啊。</p>
+<h2 id="33-周二">3.3 周二</h2>
+<p>一大起来打开乐学，发现两门课都选上了。然后开始满世界找老师补作业，开始纯靠自学对node动手之后突然有一种当年自学c语言的时候的感觉了。看完动手然后思考意思，感觉还是这种事情能挑起我的热情和兴趣。<br>
+此外好像没有做什么别的事情了，明天必须得把Group Work搞出来，不然就麻烦了。</p>
 ]]></content>
     </entry>
     <entry>
