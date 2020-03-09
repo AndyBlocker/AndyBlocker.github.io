@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-03-08T14:55:14.533Z</updated>
+    <updated>2020-03-09T17:03:05.797Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.3.4-3.8]]></title>
+        <title type="html"><![CDATA[2020.3.4-3.9]]></title>
         <id>https://andyblocker.github.io/post/202034/</id>
         <link href="https://andyblocker.github.io/post/202034/">
         </link>
@@ -40,6 +40,10 @@
 睡到九点钟才起床，也没有干什么事情，慢慢悠悠非常悠闲的过了一整天。好像也没有什么值得写下来的事情。今天可能是开学以来练琴最久的一天了。<br>
 昨天的B题改成了数组和scanf以后还是一直在t，不知道是什么原因。<br>
 老爹想收藏一把琴，又看了半天琴。好馋啊。</p>
+<h2 id="39-周一">3.9 周一</h2>
+<p>虽然需要上课但是还是很悠闲。上午慢慢悠悠学了一些数分写了大约三分之一左右（？）的数学作业之后基本就一直在练琴，一直到吃完午饭下午又马上要准备英语听力小测，之后写作业又开始练琴摸鱼了。<br>
+晚上有一场div2，但是感觉发挥的水平远不如之前那场…A题结论猜的很快，B题最开始基本没什么思路一直到了剩下半个小时左右的时候才写了个暴力的交换方法，但是其实简单分析一下题目就能看出来只要从大到小排个序输出就行了，不知道为什么一直没看出来。C题倒是一眼就看出了做法但是出了各种细节上的小错误，直到最后我也不知道到底是怎么改才改过的。基本上因为这一道题罚时爆炸整个崩掉了。D题最开始感觉是可做的，仔细读题之后发现问题很大，就自暴自弃不了了之了。赛后倒是还想尝试一下hack但是好像能知道很缓慢做法的只有B题，用100*100的大数据尝试hack其他跟我一样用傻办法做题的人三次无果后还是选择放弃。这次缓慢三题排名一下子到了快5k，大概又要掉分了吧…<br>
+看了别人的小说，又想写东西了。</p>
 ]]></content>
     </entry>
     <entry>
