@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-03-21T14:25:27.084Z</updated>
+    <updated>2020-03-23T12:29:36.013Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.3.18-3.21]]></title>
+        <title type="html"><![CDATA[2020.3.18-3.22]]></title>
         <id>https://andyblocker.github.io/post/2020318/</id>
         <link href="https://andyblocker.github.io/post/2020318/">
         </link>
@@ -33,6 +33,12 @@
 <h2 id="321-周六">3.21 周六</h2>
 <p>昨天才能醒的很早，今天再起床看手机的时候就已经八点半了。仔细一看原来是周末的闹铃没了。白天没干什么事情，结束了所有作业以后就一直在摸鱼了。明天校赛，奖金没什么希望不过至少名次不要太丢人吧。<br>
 今天好热。</p>
+<h2 id="322-周日">3.22 周日</h2>
+<p>结果又忘记了。一周的最后一天依然没什么事情，虽然校赛在今天但是参加了和大二到研究生内所有人一起比赛的组别显然就是没有准备拿名次。<br>
+A题签到题。B题最后用的是遍历整棵树然后一个一个记录的方法，感觉会tle结果没想到过了。剩下过的一个题最开始以为是多重价值的背包问题，结果最后用了一个自己构造的排序方法就过了。再之后能做的题就不多了，有一个类似斐波那契数列的矩阵快速幂倒是看出来了，结果一直TLE，大概是要用什么特别的优化方式吧。<br>
+没有什么其他要记下来的事情。</p>
+<h2 id="323-周一">3.23 周一</h2>
+<p>为了不忘记写这个，今天很早就开始写了。看了些乱七八糟的东西，写了作文和作业，之后还是得保持每周一单元U校园这种进度，要不然最后又得手忙脚乱的。除此之外没什么要记下来的事情。就这些了。</p>
 ]]></content>
     </entry>
     <entry>
