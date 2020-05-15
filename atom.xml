@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-05-10T09:40:22.442Z</updated>
+    <updated>2020-05-15T05:43:04.006Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,25 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.5.6-5.10]]></title>
+        <title type="html"><![CDATA[2020.5.13-5.14]]></title>
+        <id>https://andyblocker.github.io/post/2020513/</id>
+        <link href="https://andyblocker.github.io/post/2020513/">
+        </link>
+        <updated>2020-05-15T05:21:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>第二十周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第二十周摘要。</p>
+<!-- more -->
+<h2 id="513-周三">5.13 周三</h2>
+<p>二十周，一年也就五十周的样子吧。计划着开始安排明后两天干的事情了，不过晚上还是下大雨，没跑步。这两天打游戏的时间有点过多了，但是放下手机以后对游戏好像也没什么兴趣。很奇妙。最近大概可以多用用禅定模式，重新戒一下手机。<br>
+越来越冷了，这都五月份了。练琴也是东摸一下西摸一下，没练出什么名堂。</p>
+<h2 id="514-周四">5.14 周四</h2>
+<p>一整天除了打舟基本就是和作业奋战了。虽然基本什么都没学，看着答案好像还是能理解一些东西。后面的各种公式如果不追求完全能够推导只是能使用的话应该过一段时间自己总结一边多做一些题就行。微信群里老师发了吉米多维奇，可以从上面挑一部分下来做，正好也复习一下上个学期的数分。电分的东西后面的各种响应分析之类的最后还是回到了数学相关的东西，挺好的。大物还是得学，这边新开的课是振动和光学，希望高中学的东西能用上。<br>
+一下子居然快到结课的时候了，欠的东西还挺多。大物、数分、电分、C语言重考、八段锦、英语U校园，全都得开始了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020.5.6-5.12]]></title>
         <id>https://andyblocker.github.io/post/202056/</id>
         <link href="https://andyblocker.github.io/post/202056/">
         </link>
@@ -27,6 +45,11 @@
 <h2 id="510-周日">5.10 周日</h2>
 <p>这次应该是元旦以来鸽得最久得一次了…每次晚上都忘记写这个。 而且这段时间着实没做什么值得写下来得事情。OpenCV的学习停了，列表一直喊着要更新也拖着了，一个多月没打比赛了，学校的学习好像也不怎么上心，单词也没背了，跑步也停了好几天了。现在学校快要考试了，暑期选拔的时间到了，各种ddl快来了，又是焦头烂额的一个月。<br>
 慢慢安排吧。这次算是偷个懒，希望不是开了个坏头。以后还是得每天一次。一直这个样子就太丢人了。</p>
+<h2 id="511-周一">5.11 周一</h2>
+<p>基本摸鱼的一整天，没干什么事情。上课，看书，剩下的时间都在摸鱼。不过在乐学上看到了这个学期的重考课，C语言争取满分吧。没什么想写的事情了。</p>
+<h2 id="512-周二">5.12 周二</h2>
+<p>今天才注意到我周二是空的，课和安排都没有。前几天回暖的天气最近又冷了起来，偶尔有阵雨，所以跑步也还是没有继续。好像基本也没做什么事情。<br>
+下个星期这个时候大概会回一趟高中，只是现在这个状态和那个时候比起来还是有些…太懒散了。</p>
 ]]></content>
     </entry>
     <entry>
@@ -314,19 +337,6 @@ A题签到题。B题最后用的是遍历整棵树然后一个一个记录的方
 <h2 id="317-周二">3.17 周二</h2>
 <p>在乡下大概还会住一个多星期的样子，这一个星期应该会是非常安静而且方便的。今天主要在补物理作业，剩下的时间好像就没干什么别的事情了。明天得把每周要写的作业之类的列一个单子放在桌面上，在周五之前就分摊着赶紧全部写完。这段时间还是太怠惰了，感觉自己每天就是电脑手机没怎么搞学习也没干什么有意义的事情。<br>
 慢慢来吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[流亡]]></title>
-        <id>https://andyblocker.github.io/post/liu-wang/</id>
-        <link href="https://andyblocker.github.io/post/liu-wang/">
-        </link>
-        <updated>2020-03-10T14:22:30.000Z</updated>
-        <summary type="html"><![CDATA[<p>一点呓语。还是不想浪费之前写的提纲。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>一点呓语。还是不想浪费之前写的提纲。</p>
-<!-- more -->
-<p>毕竟是小城市里最繁华的步行街，每到周末行林路上总是人来人往。年轻男女穿得光鲜亮丽挽着手嘻嘻哈哈，穿着正装的上班族解开领带伸展筋骨，</p>
 ]]></content>
     </entry>
 </feed>
