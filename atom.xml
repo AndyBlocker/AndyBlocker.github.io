@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-05-15T05:44:18.862Z</updated>
+    <updated>2020-05-18T02:33:04.585Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.5.13-5.14]]></title>
+        <title type="html"><![CDATA[2020.5.13-5.17]]></title>
         <id>https://andyblocker.github.io/post/2020513/</id>
         <link href="https://andyblocker.github.io/post/2020513/">
         </link>
@@ -27,6 +27,15 @@
 <p>一整天除了打舟基本就是和作业奋战了。虽然基本什么都没学，看着答案好像还是能理解一些东西。后面的各种公式如果不追求完全能够推导只是能使用的话应该过一段时间自己总结一边多做一些题就行。微信群里老师发了吉米多维奇，可以从上面挑一部分下来做，正好也复习一下上个学期的数分。电分的东西后面的各种响应分析之类的最后还是回到了数学相关的东西，挺好的。大物还是得学，这边新开的课是振动和光学，希望高中学的东西能用上。<br>
 晚上又折腾了一下OpenCV，用了一个已经处理好的Haar抄了一个简单的人脸识别demo，晚一点可以看一下别人用已有的CNN是怎么去处理的，顺便能学一下相关的东西。希望是正轨的好开头吧。<br>
 一下子居然快到结课的时候了，欠的东西还挺多。大物、数分、电分、C语言重考、八段锦、英语U校园，全都得开始了。</p>
+<h2 id="515-周五">5.15 周五</h2>
+<p>今天状态好象好一点。一整天磨完了三千字的德育开题报告，做了个20个字的ppt，晚上出去跑步，算是翻开了OpenCV的书，在RM论坛上面逛了一下找了点学习资料，今天感觉还挺充实的。<br>
+继续加油。</p>
+<h2 id="516-周六">5.16 周六</h2>
+<p>持续的跑步，练琴，其他事情没什么可提的。算是确定下来下个星期的某个时候会去一趟学校了，希望回去不会被老王骂。算了一下好像是学期的第十三周的样子了，各种东西都要开始准备了，这么想着慢慢悠悠做了一个单元的U校园。<br>
+还是容易忘记写这个，整理列表好像一直都没做。</p>
+<h2 id="517-周日">5.17 周日</h2>
+<p>不知道怎么回事一直把今天当成周一了，早上还在想为什么数分课上老师没有说签到的时间。时间感觉突然就混乱了起来。没有太多任务还是很怠惰，早上起来打了一下八段锦，练习的程度也只是对动作有个基本的了解而已；上午下午基本都是练琴打游戏，感觉又没干什么事情。跑步倒是坚持住了，这个还是每天都会忘记…<br>
+是时候提高效率和自控力了。晚点可以弄两张期末考试的试卷来面向题目复习了。</p>
 ]]></content>
     </entry>
     <entry>
