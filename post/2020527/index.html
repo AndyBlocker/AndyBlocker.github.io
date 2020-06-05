@@ -1,93 +1,102 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2020.5.27-6.1 | AndyBlocker</title>
-<meta name="description" content="直抵群星" />
-<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1591022859474">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2020.5.27-6.2 | AndyBlocker</title>
+<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1591364398502">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
 
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://andyblocker.github.io">
-  <img class="avatar" src="https://andyblocker.github.io/images/avatar.png?v=1591022859474" alt="">
-  </a>
-  <h1 class="site-title">
-    AndyBlocker
-  </h1>
-  <p class="site-description">
-    直抵群星
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              2020.5.27-6.1
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-05-27
-              </span>
-              <span>
-                6 min read
-              </span>
-              
-            </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            AndyBlocker
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>第二十二周摘要。</p>
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2020.5.27-6.2
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-05-27 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>第二十二周摘要。</p>
 <!-- more -->
 <h2 id="527-周三">5.27 周三</h2>
 <p>主要任务是八段锦考试和数分复习。上午又是怠惰到最后才开始学习，下午磕磕绊绊打了一遍八段锦，这个考试算是正式结束了。打完以后倒是有点精力认真学习，算是结束了积分部分的粗略自学，晚点还是要继续面向试卷学习，把整个熟练度提高一点，这样做题才能有效率才算扎实。这周争取能把整个数分做到每个知识点的简单题都能做出来，难题到时候就随缘吧。往后还得搞电分和大物两门课的复习，大物现在正在学的内容感觉还是有一个简单的印象的，到时候主要的精力应该都会花在热学这一章节里面。电分的话只求背下来做题模板就行了，它可能会成为类似上个学期工图那个程度的课程。<br>
@@ -111,41 +120,29 @@ Gridea的主题切换还是一如既往的奇怪，不过换成paper主题的时
 充电盒比想象中的还要小一些，这个样子算是勉强符合我能够随身拿着的标准了。跑步的时候感觉也还不错，没有松动的感觉，跑步过程中听诊器效应也不算特别严重，总体来讲我还是挺满意的。音质上我也没啥追求，跟之前的铁三角比起来算是多了一点点层次感吧，听起来更清淡一点。不太高兴的小问题来讲，一是手机上一定要装配套的Galaxy Wearable，没想到在这个里面又装了一个Buds+专门的app，一下子又多了两个需要整理的图标挺烦人的；还有一个问题是我跑步的时候基本要把耳机的声音拉满，还达不到之前三分之一的那个音量。不过在网上看到说好像可以单独设置耳机音量，晚点再折腾一下试试看。之前看到的低延迟的“游戏模式”之类的好像都是三星独占，不过暂时没什么影响吧，大概。<br>
 主要的产出是凑够了两千字的历史学习笔记和心得的论文，这个学期剩下的任务就是好好学电分大物，争取拿一个高一点的成绩了。仔细看看大概是前20%还是前15%就能拿到奖学金，就以这个为大二上之前的主要目标吧。U校园也得抓紧了。<br>
 明天开危机合约了……又到了努力协调时间的时候了。</p>
+<h2 id="62-周二">6.2 周二</h2>
+<p>主要产出是学了级数部分到幂级数的内容。上午看了一点学习的东西，剩下的时候除了休息基本就是在nga上逛解包水，看看危机合约相关的内容。一个午觉睡到两点多，小姑娘突然喊着出去聊聊，不过最后大概是感觉到了我的不愿意，还是算了。<br>
+下午开始就基本一直在打游戏了，一直在凹危机合约，自己打到了12，再也动不了了。在nga上找了找思路最后改了一份作业，十一点半的时候打到了18镀了层。之后大概就是每天打打轮换拿一下保底，等到下个星期新约开了再考虑更高了。<br>
+学校搞了专业分流的宣讲，看起来好像学期末实际上分流的是学院，再要下一个学期才考虑专业的问题。计算机书院收460还是480个人，假设前面的全部都想往这边走我可能就要没书读了。</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#527-%E5%91%A8%E4%B8%89">5.27 周三</a></li>
-<li><a href="#528-%E5%91%A8%E5%9B%9B">5.28 周四</a></li>
-<li><a href="#529-%E5%91%A8%E4%BA%94">5.29 周五</a></li>
-<li><a href="#530-%E5%91%A8%E5%85%AD">5.30 周六</a></li>
-<li><a href="#531-%E5%91%A8%E6%97%A5">5.31 周日</a></li>
-<li><a href="#61-%E5%91%A8%E4%B8%80">6.1 周一</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+                </div>
+            </article>
         </div>
 
         
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://andyblocker.github.io/post/2020520/">
-              <h3 class="post-title">
-                2020.5.20-5.26
-              </h3>
-            </a>
-          </div>
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://andyblocker.github.io/post/2020520/" class="post-title gt-a-link">
+                    2020.5.20-5.26
+                </a>
+            </div>
         
 
         
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -158,7 +155,7 @@ Gridea的主题切换还是一如既往的奇怪，不过换成paper主题的时
     repo: '',
     owner: '',
     admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    id: location.pathname,      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
@@ -166,58 +163,44 @@ Gridea的主题切换还是一如既往的奇怪，不过换成paper主题的时
 
 </script>
 
-          
+            
 
-          
+            
         
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a>
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">直抵群星</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
 </div>
 
 <script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
+    hljs.initHighlightingOnLoad()
 </script>
 
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
