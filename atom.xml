@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-06-15T14:41:28.825Z</updated>
+    <updated>2020-06-16T13:50:36.930Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.6.10-6.15]]></title>
+        <title type="html"><![CDATA[2020.6.10-6.16]]></title>
         <id>https://andyblocker.github.io/post/2020610/</id>
         <link href="https://andyblocker.github.io/post/2020610/">
         </link>
@@ -39,6 +39,8 @@
 <h2 id="615-周一">6.15 周一</h2>
 <p>今天没怎么搞学习。一直嫌弃电脑风扇声音大和散热的问题，所以买了硅脂和螺丝刀把电脑拆开清灰换了硅脂。TF8，结果买来的螺丝刀没有T6的头，最终在旁边的五金店里买了一套。慢慢悠悠拆开，扭螺丝，擦掉之前的硅脂，挤了不知道是不是正确的量，然后装回去。慢慢悠悠一下子折腾到晚上了。<br>
 又用XTU降压降了0.07V，因为没什么时间所以也没有做长时间的压力测试。没有跑步。明天开始可能就是全心全意完全投入复习之中了。危机合约结束，手头上的事情也基本做完了。最紧迫的事情还是赶紧学会电分和大物两门课。</p>
+<h2 id="616-周二">6.16 周二</h2>
+<p>一整天头都很疼。时间主要花在电分实验报告上了。把书寄到武汉去了。没做什么别的事情。</p>
 ]]></content>
     </entry>
     <entry>
