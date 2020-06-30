@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-06-29T13:59:35.211Z</updated>
+    <updated>2020-06-30T14:40:52.244Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.6.24-6.29]]></title>
+        <title type="html"><![CDATA[2020.6.24-6.30]]></title>
         <id>https://andyblocker.github.io/post/2020624/</id>
         <link href="https://andyblocker.github.io/post/2020624/">
         </link>
@@ -39,6 +39,10 @@
 <p>上午浑浑噩噩，本来就没睡好再加上各种烦躁，现在写这个的时候我已经完全不记得我上午做了什么了。可能做了题，但是有感觉好像没有做什么和学习相关的事情，只是磨磨蹭蹭的过程里浪费了一整个上午。吃饭，简单在沙发上躺了一小会，下午就是模拟。看起来似乎是能看得出来屏幕上的不同，不过到时候大概还是挂在那里吧，也只是看看后面的公式之类的。<br>
 下午终于忍不住了，一个人出去走了一小会，顶着雨听了几遍灵魂歌手。初中时候的歌现在又回来了，总是几首歌反反复复，推着往前走。和家里人聊了读研的事情，虽然说没什么意义。晚上终于还是开始干活了，把后面的各种做题想当然的写了一下，希望前面的题目我能写的足够快，给后面的题目留出时间慢慢思考慢慢研究。<br>
 C语言的重考最后记了0分，缺考是拿不到平时成绩的。不过看到成绩以后心里好像反而没有之前那么烦躁了。能做的只有祈祷。</p>
+<h2 id="630-周二">6.30 周二</h2>
+<p>一上午考试。比想象中的难很多，有将近三分之一的内容没有做。不过考完了我决定就不去思考这个问题了。申导的回复是肯定要考完所有的课程才会分专业，也就是说大概是还有希望的。<br>
+这一段时间就好好休息吧。前几天心态失衡以后整个人的状态都太差了，这几天研究研究自己喜欢的东西，好好调整一下。虽然电脑上有Unity了，晚上不知道怎么最后又下了国产的Cocos研究。之前的Cocos2xd（不记得到底是叫什么了）还只是个代码库，现在也是模仿Unity啊之类的做了个编辑器，不知道到底怎么样。这几天慢慢琢磨琢磨吧。<br>
+自己打了两盘游戏，这几天可能会挑时间打一场div3恢复手感。不知道还有什么想写的了。</p>
 ]]></content>
     </entry>
     <entry>
