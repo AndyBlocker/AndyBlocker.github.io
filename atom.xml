@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-02T13:50:02.468Z</updated>
+    <updated>2020-07-03T14:02:42.285Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.1-7.2]]></title>
+        <title type="html"><![CDATA[2020.7.1-7.3]]></title>
         <id>https://andyblocker.github.io/post/202071/</id>
         <link href="https://andyblocker.github.io/post/202071/">
         </link>
@@ -27,6 +27,8 @@
 <h2 id="72-周四">7.2 周四</h2>
 <p>休息。六点半就醒了，在床上玩了好久手机才起床出去吃早饭，上午又看了一下Cocos的东西。Unity的商店里不能直接拿过去用的原因好像是两边的meta文件不通用，手动导入了一下以后解决了这个问题。看着教程做了Animation的控件，但是监听函数还是没有搞明白，在api手册里也是寥寥两句直接带过也没有Sample。不过总体来讲还行？只是做了一段时间以后没什么动力了。<br>
 没什么别的值得写下来的事情。前一天晚上和Ne子问了做官托的事情，希望能真的去做这个，不花特别多时间的情况下能有一定的入账。只是大概她也是礼貌性的应付一下吧。被拒绝了之后又有谁还能保持原来的热情呢。</p>
+<h2 id="73-周五">7.3 周五</h2>
+<p>休息日。上午没做什么，下午突然很想吃汉堡王，遂步行半小时找了个汉堡王解决晚饭。没什么可写的东西。晚两天预选赛了，这两天也休息的差不多了，该干活了。</p>
 ]]></content>
     </entry>
     <entry>
