@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-07T01:02:22.195Z</updated>
+    <updated>2020-07-07T13:42:57.287Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.1-7.6]]></title>
+        <title type="html"><![CDATA[2020.7.1-7.7]]></title>
         <id>https://andyblocker.github.io/post/202071/</id>
         <link href="https://andyblocker.github.io/post/202071/">
         </link>
@@ -40,6 +40,9 @@
 <h2 id="76-周一">7.6 周一</h2>
 <p>休息日，什么也没做，但是不知道怎么回事忘记写这个了。第二天上午再补的时候好像已经完全记不住前一天做了什么。是没做什么有意义的事情？还是说记忆力减退了？<br>
 以后还是得记住按时写这个。</p>
+<h2 id="77-周一">7.7 周一</h2>
+<p>休息日，今天是高考第一天。上午大概十点钟出门，下午六点多才到家。在外面玩了算是一整天了。回来发现大物成绩出了，还挺低的，但是仔细算算发现我的平均分到了66，极其保守地估计英语80电分70的情况下也基本上了70分，算上一点点综测和后面有可能努把力的数分应该还是能低空飘过计算机学院的线。算是松了一口气吧，至少有很大的可能还可以继续学自己更有兴趣的东西了。<br>
+明天得开始解决一下物理实验的东西。</p>
 ]]></content>
     </entry>
     <entry>
