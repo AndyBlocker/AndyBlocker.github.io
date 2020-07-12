@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-09T14:10:02.284Z</updated>
+    <updated>2020-07-12T07:04:25.365Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.8-7.9]]></title>
+        <title type="html"><![CDATA[2020.7.8-7.11]]></title>
         <id>https://andyblocker.github.io/post/202078/</id>
         <link href="https://andyblocker.github.io/post/202078/">
         </link>
@@ -27,6 +27,11 @@
 <h2 id="79-周四">7.9 周四</h2>
 <p>生日。结果一整天的大半部分花在了去不熟悉的长辈家吃饭。中午找了个借口脱身以后自己回了家，发现其实在家里我也没什么想做的事情。剩下的时间基本都在打舟，晚上用黄票赌出了铃兰和阿，感觉自己还是克制不住，不过好在是没有氪金。<br>
 明天开始集训，忙起来吧。</p>
+<h2 id="710-周五">7.10 周五</h2>
+<p>集训第一天。很简短的开训仪式以及过于快速的寒假内容复习，大概两个小时不到又把整个寒假的内容讲了一遍，发现我真的好像什么都不会了。然后练习题一开又是20道，一整天剩下的时间基本都在写题目了，最后也只做了8道的样子，晚上帮小姑娘凹了一下舟游的活动结果错过写这个的时间了，没想到一下子就是好几天没动。</p>
+<h2 id="711-周六">7.11 周六</h2>
+<p>集训第二天，接着做昨天的题目。发现是两天上一次课，一天半的时间做二十道题。但是实际情况是很多题目我都做不出来，最后是做到了12道题，走到平均水平的样子，希望之后能尽量保持这个水平吧。<br>
+晚上打CF所以又没写这个，提交B和C的时候就开始长时间in queue，结果做完之后发现比赛unrated了，遂睡觉。</p>
 ]]></content>
     </entry>
     <entry>
