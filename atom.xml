@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-12T07:04:25.365Z</updated>
+    <updated>2020-07-15T15:13:46.844Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,22 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.8-7.11]]></title>
+        <title type="html"><![CDATA[2020.7.15]]></title>
+        <id>https://andyblocker.github.io/post/2020715/</id>
+        <link href="https://andyblocker.github.io/post/2020715/">
+        </link>
+        <updated>2020-07-15T15:07:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>第二十九周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第二十九周摘要。</p>
+<!-- more -->
+<h2 id="715-周三">7.15 周三</h2>
+<p>其实这几天都真的有点怠惰，东西理解起来很困难导致直接开始摸鱼，这几天看小说的时间比做题的时间还多。不过磨磨蹭蹭算是把简单的题目全部写了，虽然有一题是完全按照板子做的。磨磨蹭蹭好像是明白了KMP，虽然大家都喜欢用1开头的下标，我还是得再折腾折腾。<br>
+过几天要写游记类的东西，大概会单独开吧。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020.7.8-7.14]]></title>
         <id>https://andyblocker.github.io/post/202078/</id>
         <link href="https://andyblocker.github.io/post/202078/">
         </link>
@@ -32,6 +47,14 @@
 <h2 id="711-周六">7.11 周六</h2>
 <p>集训第二天，接着做昨天的题目。发现是两天上一次课，一天半的时间做二十道题。但是实际情况是很多题目我都做不出来，最后是做到了12道题，走到平均水平的样子，希望之后能尽量保持这个水平吧。<br>
 晚上打CF所以又没写这个，提交B和C的时候就开始长时间in queue，结果做完之后发现比赛unrated了，遂睡觉。</p>
+<h2 id="712-周日">7.12 周日</h2>
+<p>第二场比赛结果还是unrated，有点心态爆炸。两场比赛都是快速三题明明有机会上分结果又没了。白天学的ST表，LCA问题和堆，结果还是二十道题。最后慢慢悠悠只写了两道题。</p>
+<h2 id="713-周一">7.13 周一</h2>
+<p>回了武汉花了一上午，搞卫生到快五点。决定周末的时候去上海玩一趟，面基然后自己逛逛。<br>
+最近太怠惰了以至于没什么好写的。</p>
+<h2 id="714-周二">7.14 周二</h2>
+<p>KMP和AC自动机。上课的时候倒是感觉“我悟了”，算是搞明白了KMP的原理，AC自动机因为TRIE写的不流畅连带着也不怎么熟悉了。尤其是建fail边的部分其实没有特别听明白。结果到了自己做题的时候就完全不行，怎么写都写不对。<br>
+也许应该专门开一篇文章记录一下学习过程中的想法，下次再“悟了”之后还得自己写一段能跑的板子然后写好带着原理的注释。</p>
 ]]></content>
     </entry>
     <entry>
@@ -329,30 +352,6 @@ Gridea的主题切换还是一如既往的奇怪，不过换成paper主题的时
 又是大工程。</p>
 <h2 id="519-周二">5.19 周二</h2>
 <p>早上起的还挺早的，看着导航到学校要一个小时于是没吃早饭就去等公交，结果提前到了十几分钟。提了三个西瓜进了学校，从信息办公室一路溜达，除了秋秋以外的每个老师都见到了。一年时间大家都没怎么变。一上午嬉皮笑脸到处扯扯感觉还挺累的。没做什么其他的事情，跑了个步。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.5.6-5.12]]></title>
-        <id>https://andyblocker.github.io/post/202056/</id>
-        <link href="https://andyblocker.github.io/post/202056/">
-        </link>
-        <updated>2020-05-10T09:33:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>第十九周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第十九周摘要。</p>
-<!-- more -->
-<h2 id="56-周三">5.6 周三</h2>
-<h2 id="5-7-周四">5. 7 周四</h2>
-<h2 id="58-周五">5.8 周五</h2>
-<h2 id="59-周六">5.9 周六</h2>
-<h2 id="510-周日">5.10 周日</h2>
-<p>这次应该是元旦以来鸽得最久得一次了…每次晚上都忘记写这个。 而且这段时间着实没做什么值得写下来得事情。OpenCV的学习停了，列表一直喊着要更新也拖着了，一个多月没打比赛了，学校的学习好像也不怎么上心，单词也没背了，跑步也停了好几天了。现在学校快要考试了，暑期选拔的时间到了，各种ddl快来了，又是焦头烂额的一个月。<br>
-慢慢安排吧。这次算是偷个懒，希望不是开了个坏头。以后还是得每天一次。一直这个样子就太丢人了。</p>
-<h2 id="511-周一">5.11 周一</h2>
-<p>基本摸鱼的一整天，没干什么事情。上课，看书，剩下的时间都在摸鱼。不过在乐学上看到了这个学期的重考课，C语言争取满分吧。没什么想写的事情了。</p>
-<h2 id="512-周二">5.12 周二</h2>
-<p>今天才注意到我周二是空的，课和安排都没有。前几天回暖的天气最近又冷了起来，偶尔有阵雨，所以跑步也还是没有继续。好像基本也没做什么事情。<br>
-下个星期这个时候大概会回一趟高中，只是现在这个状态和那个时候比起来还是有些…太懒散了。</p>
 ]]></content>
     </entry>
 </feed>
