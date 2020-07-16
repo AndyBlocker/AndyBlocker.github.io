@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-15T15:13:46.844Z</updated>
+    <updated>2020-07-16T14:27:19.807Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.15]]></title>
+        <title type="html"><![CDATA[2020.7.15-7.16]]></title>
         <id>https://andyblocker.github.io/post/2020715/</id>
         <link href="https://andyblocker.github.io/post/2020715/">
         </link>
@@ -23,6 +23,9 @@
 <h2 id="715-周三">7.15 周三</h2>
 <p>其实这几天都真的有点怠惰，东西理解起来很困难导致直接开始摸鱼，这几天看小说的时间比做题的时间还多。不过磨磨蹭蹭算是把简单的题目全部写了，虽然有一题是完全按照板子做的。磨磨蹭蹭好像是明白了KMP，虽然大家都喜欢用1开头的下标，我还是得再折腾折腾。<br>
 过几天要写游记类的东西，大概会单独开吧。</p>
+<h2 id="716-周四">7.16 周四</h2>
+<p>位运算和状压DP。硬说的话大概是听懂了，但是整个动态规划知识点，我最大的问题是听得懂做不出题目，真正做题的时候也不愿意自己去思考状态转移方程。下午开了EX和小剿灭，打到晚上九点多才打完。<br>
+收拾行李明天出发。我在想要不要到了机场以后用最后剩下的一个小时给rating签个到。</p>
 ]]></content>
     </entry>
     <entry>
