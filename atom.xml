@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-07-22T14:54:12.959Z</updated>
+    <updated>2020-07-22T14:54:50.648Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -63,7 +63,7 @@
 明天该走了。</p>
 <h2 id="721-周二">7.21 周二</h2>
 <p>回程。上午最终还是睡到了九点钟，意识模糊地爬起来然后慢慢悠悠开始收拾衣服。大概十一点半的样子就退房，又吃了一餐KFC以后坐着地铁慢慢悠悠到了机场。又一次感叹浦东机场确实比天河机场大很多。为了保险不要迟到再加上退房必须在十二点之前，我早到了大概两个小时的样子，坐在登机口打发了这段时间。不过有点意外的是人很少，飞机上却并没有多少空位置。<br>
-回家吃饭，简单休息一下以后晚上打了场CF。A签到，B是疑似Nim博弈但是实际上更简单一些的模型。暴力做了C1以后C2一直tle，最终排名在5000+的样子。中间还把reverse达成了reserve。不过意外的居然上分了。</p>
+回家吃饭，简单休息一下给表妹买了电脑，自己也买了点东西。晚上打了场CF。A签到，B是疑似Nim博弈但是实际上更简单一些的模型。暴力做了C1以后C2一直tle，最终排名在5000+的样子。中间还把reverse达成了reserve。不过意外的居然上分了。</p>
 ]]></content>
     </entry>
     <entry>
