@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-01T14:44:31.019Z</updated>
+    <updated>2020-08-05T00:29:34.619Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.7.29-8.1]]></title>
+        <title type="html"><![CDATA[2020.7.29-8.4]]></title>
         <id>https://andyblocker.github.io/post/2020729/</id>
         <link href="https://andyblocker.github.io/post/2020729/">
         </link>
@@ -34,6 +34,16 @@
 <p>上午讲课讲的是计算几何。概念倒是差不多都能理解，但是感觉最好的办法还是找一套用得顺手的板子直接背下来。剩下的时间算是基本搞懂了这篇论文在讲什么，但是发现实际写代码还是很难。最后大部分时间基本就放在看懂别人在写什么然后我抄个差不多的了。<br>
 应该明天可以给老师发过去吧。但是即使这个样子我做出来了，到课题组去我又能干什么呢。感觉自己会的东西太少而又缺乏毅力，陷入了可能两三周之前也抱怨过并且一直在重复着抱怨的问题之中。<br>
 暑期征文的主题是神话传说，不是很想动笔。</p>
+<h2 id="82-周日">8.2 周日</h2>
+<p>努力自己重写了在知乎上看到的那个用了一大堆指针的东西，结果一整天时间下来还没写出一个能起作用的程序。原理很简单但是OpenCV不熟悉导致整个实现写的很艰难。<br>
+明天ACM又上课了，讲的东西越来越神仙。现在那边训练的题目我也没怎么动过了，不知道这个样子患得患失最后究竟能学什么。<br>
+数分考试也快来了，但是之前的课还是没出几门成绩。晚点得好好复习一下数分的东西，自己写几套试卷。这个上面还是得争取能多拿一点分就多拿一点分。<br>
+表妹过几天准备走了。赶紧把SummerTime Record录了。总还算是答应别人的事情。不过至少也得等我这边的东西全部弄完。</p>
+<h2 id="83-周一">8.3 周一</h2>
+<p>居然一下子两三天没有写这个。周一干了什么印象也不深了，迷茫地听了可持久化的讲座，一个小时把可持久化的思想到各种实现全部讲了一遍，完全没有听明白。<br>
+下午主要干的事情可能就是继续写non-local denoising的东西，终于算是有输出了但是出来的结果完全没有降噪的作用，倒不如说算是把每一个噪点拉长形成的类似印象派的图像。还得再改改。</p>
+<h2 id="84-周二">8.4 周二</h2>
+<p>可能要开学了，但是具体的时间还是不清楚。等集训结束以后得开始复习数分的东西了。各个成绩还是没出，但是数分的成绩一定不能低，如果有可能最好是把数分的成绩提到英语那个水平。虽然MOOC做的很差但是考试说不定还有希望。</p>
 ]]></content>
     </entry>
     <entry>
