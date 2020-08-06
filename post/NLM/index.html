@@ -1,0 +1,319 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>非局部均值去噪算法的实践 | AndyBlocker</title>
+<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1596705205642">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            AndyBlocker
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    非局部均值去噪算法的实践
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-08-06 ·
+                    </time>
+                    
+                        <a href="https://andyblocker.github.io/tag/_a-EGOmfx/" class="post-tags">
+                            # 笔记
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>摘要：本文主要记录了一次使用C++以及OpenCV配套库，初步实现论文《A non-local algorithm for image denoising》中介绍的非局部均值去噪算法，并对这一实现的效果进行评估与改进的过程。</p>
+</blockquote>
+<h2 id="0-引言">0 引言</h2>
+<p>现代电子设备拍摄和传输图像的过程中将会受到噪声的影响，因此去噪是图像处理过程中不可缺少的一环。针对图像去噪问题，Antoni Buades等人在2005年发表的论文《A non-local algorithm for image denoising》中提出了一种名为非局部均值去噪的算法，本文是对复现论文中算法过程的记录。</p>
+<h2 id="1-实验原理">1 实验原理</h2>
+<p>论文中，作者使用以下方法定义了非局部均值去噪算法：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mi>L</mi><mo>[</mo><mi>v</mi><mo>]</mo><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><mi>I</mi></mrow></munder><mi>w</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mi>v</mi><mo>(</mo><mi>j</mi><mo>)</mo><mspace linebreak="newline"></mspace><mi>w</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>i</mi></msub><mo>)</mo><mo>−</mo><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>j</mi></msub><mo>)</mo><mi mathvariant="normal">∣</mi><msubsup><mi mathvariant="normal">∣</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>a</mi></mrow><mn>2</mn></msubsup></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mrow></msup><mspace linebreak="newline"></mspace><mi>Z</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>i</mi></msub><mo>)</mo><mo>−</mo><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>j</mi></msub><mo>)</mo><mi mathvariant="normal">∣</mi><msubsup><mi mathvariant="normal">∣</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>a</mi></mrow><mn>2</mn></msubsup></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">NL[v](i)=\sum_{j\in I}w(i,j)v(j)\\w(i,j)=\frac{1}{Z(i)}e^{-\frac{||\nu(N_{i})-\nu(N_{j})||_{2,a}^2}{h^{2}}}\\Z(i)=\sum_{j}e^{-\frac{||\nu(N_{i})-\nu(N_{j})||_{2,a}^2}{h^{2}}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault">L</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.480449em;vertical-align:-1.430444em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.8556639999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">∈</span><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.430444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.45553em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.51953em;"><span style="top:-3.5195300000000005em;margin-right:0.05em;"><span class="pstrut" style="height:3.06611em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5230142857142859em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.7741285714285717em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mtight">∣</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.31472em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5091600000000001em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mord mtight">∣</span><span class="mord mtight"><span class="mord mtight">∣</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-2.208em;margin-left:0em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">a</span></span></span><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.63088em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.933307em;vertical-align:-1.413777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.8723309999999997em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.413777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.51953em;"><span style="top:-3.5195300000000005em;margin-right:0.05em;"><span class="pstrut" style="height:3.06611em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5230142857142859em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.7741285714285717em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mtight">∣</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.31472em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5091600000000001em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mord mtight">∣</span><span class="mord mtight"><span class="mord mtight">∣</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-2.208em;margin-left:0em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">a</span></span></span><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.63088em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>即，使用欧式距离衡量邻域之间的相似度，实际图像的每一个像素点的值为与其邻域详尽的额所有像素点的加权平均值之和。</p>
+<h2 id="2-实验过程">2 实验过程</h2>
+<p>本次实验使用的示例图像如下：<img src="https://andyblocker.github.io/post-images/1596700352291.png" alt="" loading="lazy"><br>
+对于一张基本不含有噪点的图像，我们首先使用如下方法向图像添加高斯噪点和椒盐噪点：</p>
+<pre><code class="language-C++">void addNoiseSoltPepperMono(Mat&amp; src, Mat&amp; dest, double per) {
+  cv::RNG rng;
+#pragma omp parallel for
+  for (int j = 0; j &lt; src.rows; j++) {
+  	uchar* s = src.ptr(j);
+  	uchar* d = dest.ptr(j);
+  	for (int i = 0; i &lt; src.cols; i++) {
+  		double a1 = rng.uniform((double)0, (double)1);
+  		if (a1 &gt; per)d[i] = s[i];
+  		else {
+  			double a2 = rng.uniform((double)0, (double)1);
+  			if (a2 &gt; 0.5)d[i] = 0;
+  			else d[i] = 255;
+  		}
+  	}
+  }
+}
+
+void addNoiseMono(Mat&amp; src, Mat&amp; dest, double sigma) {
+  Mat s;
+  src.convertTo(s, CV_16S);
+  Mat n(s.size(), CV_16S);
+  randn(n, 0, sigma);
+  Mat temp = s + n;
+  temp.convertTo(dest, CV_8U);
+}
+
+void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
+  	addNoiseMono(src, dest, sigma);
+      addNoiseSoltPepperMono(dest, dest, sprate);
+  	return;
+}
+</code></pre>
+<p>使用上述代码添加噪点后的图片效果如下：<img src="https://andyblocker.github.io/post-images/1596700768690.png" alt="" loading="lazy"><br>
+根据论文介绍的实验原理，复现的代码如下：</p>
+<pre><code class="language-C++">void nlFliter(Mat&amp; src, Mat&amp; dst, int searchBoxSize, int kernelSize, double h)
+{
+	dst = Mat::zeros(src.size(), src.type());
+	int halfSearchSize = searchBoxSize / 2, halfKernelSize = kernelSize / 2;//锚点左右宽度
+	int D = kernelSize * kernelSize;//搜索范围内的元素个数
+	double div = 1.0 / D;
+	int srcSize = src.rows * src.cols;//图像总像素数量
+	int tD = searchBoxSize * searchBoxSize;//邻域内像素数量
+	double tdiv = 1.0 / tD;//归一化
+
+	int BorderSize = halfKernelSize + halfSearchSize;//拓展边框宽度
+	Mat exSrc;//增广后图像
+	copyMakeBorder(src, exSrc, BorderSize, BorderSize, BorderSize, BorderSize, cv::BORDER_DEFAULT);
+
+	vector&lt;double&gt; weight(srcSize);//各点的权重
+	int emax = 0;
+	for (int i = 0; i &lt; srcSize; i++)
+	{
+		double v = exp(max(i + 2.0 / h, 0.0) * -1.0 / (h * h));
+		weight[i] = v;
+		if (v &lt; 0.001)
+		{
+			emax = i;
+			break;
+		}
+	}
+	for (int i = emax; i &lt; srcSize; i++)
+		weight[i] = 0;
+	int cnt = 0;
+#pragma omp parllel for
+	for (int i = BorderSize; i &lt; src.rows + BorderSize - 1; i++)
+	{
+		vector&lt;int&gt;ww(D);//邻域方差
+		vector&lt;double&gt;nw(D);//权重
+		for (int j = BorderSize; j &lt; src.cols + BorderSize - 1; j++)//对于原图的任意一个像素
+		{
+			cnt++;
+			if (cnt % 200 == 0)
+				cout &lt;&lt; 100.0 * cnt / srcSize &lt;&lt; '%' &lt;&lt; endl;
+			//(i,j)为正在处理的像素
+			double tweight = 0;
+			for (int k = -halfKernelSize, count = 0; k &lt;= halfKernelSize; k++)
+				for (int l = -halfKernelSize; l &lt;= halfKernelSize; l++)//对于搜索范围内的任意一个像素(i+k,j+l)
+				{
+					int e = 0;
+					for (int m = -halfSearchSize; m &lt;= halfSearchSize; m++)
+						for (int n = -halfSearchSize; n &lt;= halfSearchSize; n++)//计算searchBox内的(i+k+m,j+l+n)
+							e += (exSrc.ptr(i + m)[j + n] - exSrc.ptr(i + k + m)[j + l + n]) * (exSrc.ptr(i + m)[j + n] - exSrc.ptr(i + k + m)[j + l + n]);
+					int ediv = e * tdiv;//均一化后的权重大小
+					ww[count++] = ediv, tweight += weight[ediv];
+				}
+			if (tweight == 0)
+			{
+				for (int k = 0; k &lt; D; k++)
+					nw[k] = 0;
+				nw[D / 2 + 1] = 1;
+			}
+			else {
+				double itweight = 1.0 / tweight;
+				for (int k = 0; k &lt; D; k++)
+					nw[k] = weight[ww[k]] * itweight;
+			}
+			double v = 0;
+			int count = 0;
+			for (int l = -halfKernelSize; l &lt;= halfKernelSize; l++)
+				for (int k = -halfKernelSize; k &lt;= halfKernelSize; k++)
+					v += exSrc.ptr(i + l)[j + k] * nw[count++];
+			dst.ptr(i - BorderSize)[j - BorderSize] = v;
+		}
+	}
+}
+</code></pre>
+<p>按照论文中的数据设置，将邻域大小（searchBoxSize）设为7，搜索域大小（kernelSize）设为21，处理后得到的图像效果如下：<br>
+<img src="https://andyblocker.github.io/post-images/1596703732723.png" alt="" loading="lazy"><br>
+可以看到，图片中的噪点较降噪之前有了一定程度的改善，但是细节与纹理结构保存的并不好。并且图像上出现了大面积的斑纹，推测是对权重的计算仍然存在一定的问题。计算MSE也可发现，该实现所得到得图像MSE高达114，远高于原文中处理Lena图像时的68，接近原文中举出的其他几种本地的降噪算法（GF：120；AF：114；TVF：129）。可见这种实现由于其中仍存在的问题，相较于原论文的实现仍然效率低、效果差。<br>
+调用OpenCV中自带的fastNlMeansDenoising(https://andyblocker.github.io/post-images/1596703740284.png)<br>
+标程与实现在视觉效果上差距较小，但在相同参数下标程的RME仅为66，这证明文中的实现仍然存在较大的问题。同时，实现的运行时间远长于标程，在对Lena图像采用文中参数进行处理的情况下，文中实现的运行时间大约在五分钟左右，而标程的运行时间仅为约三十秒。</p>
+<h2 id="3-结论与展望">3 结论与展望</h2>
+<p>在对论文中介绍的其他几种本地降噪算法进行对比后，可以得到非局部均值去噪算法的优点如下：</p>
+<ul>
+<li>充分利用了图像中的信息，能够较多地保存图像的细节特征；</li>
+<li>在边缘不易产生损失；</li>
+</ul>
+<p>但是，该算法的复杂度较高，为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>N</mi><msup><mi>D</mi><mn>2</mn></msup><msup><mi>d</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(ND^2d^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，其中N是图像包含的像素数量，D是搜索区域宽度，d是邻域宽度，因此运行时消耗的时间非常多。而通过对代码的分析可知，计算邻域之间的欧氏距离时，有大量的数据被重复计算了。因此可以使用二维前缀和的方法预处理图像，这样在计算欧式距离的过程中时间复杂度将下降为常数，在少量提高内存开销的情况下有效地优化了算法的复杂度。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://andyblocker.github.io/post/202085/" class="post-title gt-a-link">
+                    2020.8.5
+                </a>
+            </div>
+        
+
+        
+            <span id="/post/" class="leancloud_visitors" data-flag-title="非局部均值去噪算法的实践">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'vVTaWztaL2aCumykED0Y5Sm2-gzGzoHsz',
+		appKey: 'u5qtxluDANHVNqL5BTkJW8vq',
+		avatar: 'mp',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: 'Just Go Go',
+		visitor: true,
+	});
+</script>
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">直抵群星。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
