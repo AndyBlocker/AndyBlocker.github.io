@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>非局部均值去噪算法的实践 | AndyBlocker</title>
-<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1596706363078">
+<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1596706703228">
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -223,7 +223,8 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 <p>按照论文中的数据设置，将邻域大小（searchBoxSize）设为7，搜索域大小（kernelSize）设为21，处理后得到的图像效果如下：<br>
 <img src="https://andyblocker.github.io/post-images/1596703732723.png" alt="" loading="lazy"><br>
 可以看到，图片中的噪点较降噪之前有了一定程度的改善，但是细节与纹理结构保存的并不好。并且图像上出现了大面积的斑纹，推测是对权重的计算仍然存在一定的问题。计算MSE也可发现，该实现所得到得图像MSE高达114，远高于原文中处理Lena图像时的68，接近原文中举出的其他几种本地的降噪算法（GF：120；AF：114；TVF：129）。可见这种实现由于其中仍存在的问题，相较于原论文的实现仍然效率低、效果差。<br>
-调用OpenCV中自带的fastNlMeansDenoising(https://andyblocker.github.io/post-images/1596703740284.png)<br>
+调用OpenCV中自带的fastNlMeansDenoising()并将参数设置至与实现一致，所得效果图如下：<br>
+<img src="https://andyblocker.github.io/post-images/1596703740284.png" alt="" loading="lazy"><br>
 标程与实现在视觉效果上差距较小，但在相同参数下标程的RME仅为66，这证明文中的实现仍然存在较大的问题。同时，实现的运行时间远长于标程，在对Lena图像采用文中参数进行处理的情况下，文中实现的运行时间大约在五分钟左右，而标程的运行时间仅为约三十秒。</p>
 <h2 id="3-结论与展望">3 结论与展望</h2>
 <p>在对论文中介绍的其他几种本地降噪算法进行对比后，可以得到非局部均值去噪算法的优点如下：</p>
