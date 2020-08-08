@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-06T14:24:25.963Z</updated>
+    <updated>2020-08-08T14:13:43.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -152,7 +152,7 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020.8.5-8.6]]></title>
+        <title type="html"><![CDATA[2020.8.5-8.8]]></title>
         <id>https://andyblocker.github.io/post/202085/</id>
         <link href="https://andyblocker.github.io/post/202085/">
         </link>
@@ -169,6 +169,13 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 <h2 id="86-周四">8.6 周四</h2>
 <p>搞定了实验报告，并且找到了有重影的问题——权值计算的时候count变量忘记改了，导致实际处理的时候权值分配错误。改完的实现视觉效果上已经非常接近自带的fastNLmeansDenoising了，感觉还不错。<br>
 可能还是得准备出国的问题吧。</p>
+<h2 id="87-周五">8.7 周五</h2>
+<p>彻底无所事事的一天。翘了暑期集训的课——这段时间暂时不想上了。从明天开始慢慢准备数分考试的事情。突然改成线上考试基本就是在说九月份回去也很艰难吧。线上考试会是什么形式也不清楚。<br>
+一下子失去动力以后人都颓废起来了。</p>
+<h2 id="88-周六">8.8 周六</h2>
+<p>把电脑搬开复习数分。结果一整天实际上投入学习的时间并不多。心里的想法一个接一个，总是静不下心来。又想起社会实践活动的事情，到现在为止也只知道有一个人开始了然后交上了一些基本不能用的内容。和颜悦色劝回去再改改以后更加烦躁了。不过看起来这边好像不是那么紧急的事情，昨天找到的学校文件最终确认下来应该是只要能把学分凑齐六个就可以，这么看来只要多参加各种比赛也能够抵掉社会实践。可能是这样吧。<br>
+实验报告交给老师以后就没有任何回应了。不过说的是下周约时间的话，耐心等待吧。<br>
+感觉这个从每日干了什么事情的摘要记录逐渐变成每天发牢骚和有想法的事情有哪些了。以后还是多写点东西吧。</p>
 ]]></content>
     </entry>
     <entry>
