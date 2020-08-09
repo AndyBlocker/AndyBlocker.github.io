@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-08T14:13:43.618Z</updated>
+    <updated>2020-08-09T13:58:03.239Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -152,7 +152,7 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020.8.5-8.8]]></title>
+        <title type="html"><![CDATA[2020.8.5-8.9]]></title>
         <id>https://andyblocker.github.io/post/202085/</id>
         <link href="https://andyblocker.github.io/post/202085/">
         </link>
@@ -176,6 +176,10 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 <p>把电脑搬开复习数分。结果一整天实际上投入学习的时间并不多。心里的想法一个接一个，总是静不下心来。又想起社会实践活动的事情，到现在为止也只知道有一个人开始了然后交上了一些基本不能用的内容。和颜悦色劝回去再改改以后更加烦躁了。不过看起来这边好像不是那么紧急的事情，昨天找到的学校文件最终确认下来应该是只要能把学分凑齐六个就可以，这么看来只要多参加各种比赛也能够抵掉社会实践。可能是这样吧。<br>
 实验报告交给老师以后就没有任何回应了。不过说的是下周约时间的话，耐心等待吧。<br>
 感觉这个从每日干了什么事情的摘要记录逐渐变成每天发牢骚和有想法的事情有哪些了。以后还是多写点东西吧。</p>
+<h2 id="89-周日">8.9 周日</h2>
+<p>彻底失去动力参加任何事情的一天。下午打开了比赛的页面调了两个题但是不想交上去。今天早点休息吧，明天开始继续学数分。<br>
+在下面散步的时候想了一大堆有的没的的事情，不想写在这里。至少从明天开始的一两个星期里不要再发牢骚或者怎么样了吧。<br>
+仔细一看似乎是“下周”了，还得准备和老师聊的事情。但是以后的各种事情究竟会怎么样完全想不明白，什么路都觉得走不通。不过又报有无时无刻不觉得自己是幼稚而无理由的思考的人， 以至于最后无法得出任何结论。走一步看一步吧。至少先承认自己的平庸。</p>
 ]]></content>
     </entry>
     <entry>
