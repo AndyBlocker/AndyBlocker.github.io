@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-10T13:44:50.398Z</updated>
+    <updated>2020-08-11T14:23:02.477Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -152,7 +152,7 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020.8.5-8.10]]></title>
+        <title type="html"><![CDATA[2020.8.5-8.11]]></title>
         <id>https://andyblocker.github.io/post/202085/</id>
         <link href="https://andyblocker.github.io/post/202085/">
         </link>
@@ -185,6 +185,10 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 今天效率还算不错，算是巩固了一下之前学的两个单元，做了一些相关的题目，知道怎么考了。但是剩下的时间只剩十天了，接下来的内容难度比现在高不少，不知道能不能搞完。<br>
 上午例行查成绩的时候发现又出了几门成绩，算下来现在的平均分已经有73了，数分不拖后腿的话应该有比较大的机会学计算机了。希望是这样。<br>
 照常跑步了。各种意义上都得更快一点对自己更严格一点了。</p>
+<h2 id="811-周二">8.11 周二</h2>
+<p>今天效率也许还行？总还算做了不少题。感觉一年下来计算能力完全不行了，今天算错了大量的东西，完完全全地手生了。这段时间多做些题目把手感找回来吧。明天开始还是得做一下后面的内容，不能在一个地方耽误太久的时间。<br>
+到处都在传一份不知道真假但是看起来很像是真的的ppt，大概28号会回学校？不知道后面的诸如小学期/军训之类的事情会怎么安排。<br>
+开始休息以后就一直在打舟了。还好这个复刻不怎么花时间。明天开始做题的速度和量都得多一点快一点。</p>
 ]]></content>
     </entry>
     <entry>
