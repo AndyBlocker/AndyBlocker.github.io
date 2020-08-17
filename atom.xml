@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-17T03:54:56.016Z</updated>
+    <updated>2020-08-17T14:06:48.967Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.8.12-8.16]]></title>
+        <title type="html"><![CDATA[2020.8.12-8.17]]></title>
         <id>https://andyblocker.github.io/post/2020812/</id>
         <link href="https://andyblocker.github.io/post/2020812/">
         </link>
@@ -36,6 +36,9 @@
 <h2 id="816-周日">8.16 周日</h2>
 <p>一整天几乎无所事事。想写卷子发现忘记带笔记本充电器了，以这个为借口玩了一整天。<br>
 明天回去。</p>
+<h2 id="817-周一">8.17 周一</h2>
+<p>每次几天忘记写以后补上的代价就是写的特别草。本来就没什么值得记下来的情况下再忘记一部分事情根本就没办法写。<br>
+回了家但还是没怎么搞学习。打印了答题卡和考试说明书。</p>
 ]]></content>
     </entry>
     <entry>
