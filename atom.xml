@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-08-22T14:04:02.808Z</updated>
+    <updated>2020-08-24T14:13:01.785Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.8.19-8.22]]></title>
+        <title type="html"><![CDATA[2020.8.19-8.24]]></title>
         <id>https://andyblocker.github.io/post/2020819/</id>
         <link href="https://andyblocker.github.io/post/2020819/">
         </link>
@@ -34,6 +34,14 @@
 <p>军训的正式通知来了——虽然不是我们书院。二十天整的军训，不过这么看的话小学期的课程说不定真的要放到平时课程学了。<br>
 上午和家里人出去转转，下午尝试录七夕。结果因为只有一个手机录音的原因，分两次录出来的效果非常奇怪。明天也许可以试试用两个手机录，自己的手机用前置摄像头录视频，再找个什么不算特别差的设备来录音。<br>
 又想换显示器了，至少得先找个能把旧显示器接盘的人吧。</p>
+<h2 id="823-周日">8.23 周日</h2>
+<p>跳蚤市场里收东西的人还真的挺多的。显示器挂上去以后马上就被一个18级的学长收走了，返校就能面交。只可惜价格挂得低了一点，看到这种情况应该挂550也有人收的。中午又在外面吃饭，带了一大瓶快乐水回来。<br>
+下午试着再录了一个七夕，虽然确实弹错了但是总体还行就懒得重录了。详细的活动规则说二十五号零点以后开始开放浏览就视为参加活动所以直接投了。到时候再去做网络乞丐找朋友要三连好了。<br>
+晚上突然停电了，在房间里没有灯只有电脑屏幕闪亮的时候练琴。Passion和月下之恋这种时候都听起来特别有感觉。只是担心手机什么时候会没电。<br>
+文语谈更新的时候突然被面包cue了那个站点，可能最近又理一下游戏逻辑然后挤一点吧。成就类的逻辑应该还是比较好做，关键是游戏的核心玩法到底怎么去设计，把这个问题相通以后应该能很快写出第一版的demo，再在上面慢慢加科技啊成就啊之类的东西就好，最后再考虑存档的问题吧。</p>
+<h2 id="824-周一">8.24 周一</h2>
+<p>做了核酸检查，毫无意外地是阴性。不过我其实很认真地想了如果是阳性会怎么样。没做什么其他的事情，年级大会让人更加迷惑了。9.7开始上课，军训变成了“依据课程安排”、“穿插进行”。最后会是晨练？不知道。<br>
+要开始准备回学校的各种事情了。</p>
 ]]></content>
     </entry>
     <entry>
