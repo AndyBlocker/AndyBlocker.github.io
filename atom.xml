@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-09-22T16:21:46.855Z</updated>
+    <updated>2020-09-23T15:54:22.387Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.9.23]]></title>
+        <id>https://andyblocker.github.io/post/2020923/</id>
+        <link href="https://andyblocker.github.io/post/2020923/">
+        </link>
+        <updated>2020-09-23T15:50:01.000Z</updated>
+        <summary type="html"><![CDATA[<p>第三十九周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第三十九周摘要。</p>
+<!-- more -->
+<h2 id="923-周三">9.23 周三</h2>
+<p>没做什么。又被要了一次微信，不过好在明天就结束了。晚上给以前的同学讲了两个小时的图论，没想到只讲了这么一点东西。对面倒是挺感激，但是我只觉得我什么都没有做。<br>
+没什么别的好说的。没有跑步。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.9.16-9.22]]></title>
         <id>https://andyblocker.github.io/post/2020916/</id>
@@ -463,40 +478,6 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 下午主要干的事情可能就是继续写non-local denoising的东西，终于算是有输出了但是出来的结果完全没有降噪的作用，倒不如说算是把每一个噪点拉长形成的类似印象派的图像。还得再改改。</p>
 <h2 id="84-周二">8.4 周二</h2>
 <p>可能要开学了，但是具体的时间还是不清楚。等集训结束以后得开始复习数分的东西了。各个成绩还是没出，但是数分的成绩一定不能低，如果有可能最好是把数分的成绩提到英语那个水平。虽然MOOC做的很差但是考试说不定还有希望。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.7.22-7.28]]></title>
-        <id>https://andyblocker.github.io/post/2020722/</id>
-        <link href="https://andyblocker.github.io/post/2020722/">
-        </link>
-        <updated>2020-07-22T14:52:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>第三十周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第三十周摘要。</p>
-<!-- more -->
-<h2 id="722-周三">7.22 周三</h2>
-<p>早上八点钟才醒，慌慌张张打开电脑听课结果讲课的内容是念概率论的公式。昨天买的激光笔和鼠标都到了，这几天要快速的搞完所有和物理实验有关的东西。过几天整理一下列表吧。<br>
-精神状态不太好，不知道是旅游后遗症还是水土不服之类的。</p>
-<h2 id="723-周四">7.23 周四</h2>
-<p>可能还算充实，但是一整天基本没有写和ACM相关的东西。先是上午看到了这一年的高考成绩，给复读的高中同学好好推荐了一下自己的学校；然后就是长时间的折腾物理实验相关的东西，下午失去耐心以后又整理了列表。<br>
-我记得我还做了点其他的更有意义的事情，但是晚上早早上床休息忘记写这个了，以至于第二天非常焦躁的情况下完全想不起来我还干了什么。</p>
-<h2 id="724-周五">7.24 周五</h2>
-<p>一整天时间做完了两个物理实验。晚上信心满满地准备打CF结果签到题写了一个多小时还没有做出来。心情非常焦躁的情况写姑且先把这个写了。<br>
-还是回头再看看有没有什么会写的吧。<br>
-补：很神奇，和小姑娘慢慢讨论一段时间以后心情逐渐平复下来了。居然用截断的方法做了A以后又把C题给莽出来了。只是不知道重测能不能过，希望这次不要被卡下来吧。</p>
-<h2 id="725-周六">7.25 周六</h2>
-<p>很恐怖地，昨天的A被卡掉以后一道压线过的C让我一口气上了100分。可能是CF的rating计算机制还会参考和我原rating类似的选手排名，而他们大多数只做了一道A甚至连A都没做出来吧。第一次一口气能加这么多分，以后也跟着慢慢打吧。<br>
-但是上午的集训rating就不那么友好了。C是一道博弈论，但是看了10min以后感觉没有什么思路就直接放弃了。剩下的时间几乎一直在啃D题，结果到最后题意好像理解有问题，WA6发以后感觉心态不稳了。最后rating也是爆零。<br>
-想录一个Summertime Record作为面基礼物。ST发烧了，infas和妈耶好像非常担心这个事情。我好像没什么感觉。</p>
-<h2 id="726-周日">7.26 周日</h2>
-<p>讲课内容是网络流和二分图匹配，但是讲的内容非常难以理解。到今天为止集训也好rating也好已经有很明显的跟不上、很吃力的感觉了。大概暑假结束以后我可能就继续看各种OpenCV的内容了。<br>
-重新开始跑步，结果跑了1.5公里就开始有点喘不上气。慢慢恢复吧。</p>
-<h2 id="727-周一">7.27 周一</h2>
-<p>基本上没干什么的一天。上午基本上在摸鱼，下午表妹来了以后就一直在和她一起查志愿的事情。晚上跑完步洗完澡回来没做什么也就准备睡觉了。</p>
-<h2 id="728-周二">7.28 周二</h2>
-<p>一上午迷迷糊糊，明明是组合数学后面突然变成置换群，一个群的人都听不懂。然后出门和表妹吃了披萨，下午回来小睡一会就是一直危机合约了。这次危机合约格外简单，快速18以后就开始帮群友打18了。<br>
-明天晚上有比赛。</p>
 ]]></content>
     </entry>
 </feed>
