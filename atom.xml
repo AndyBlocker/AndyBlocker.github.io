@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-09-24T16:26:37.760Z</updated>
+    <updated>2020-09-25T15:57:30.951Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.9.23-9.24]]></title>
+        <title type="html"><![CDATA[2020.9.23-9.25]]></title>
         <id>https://andyblocker.github.io/post/2020923/</id>
         <link href="https://andyblocker.github.io/post/2020923/">
         </link>
@@ -26,6 +26,9 @@
 <h2 id="924-周四">9.24 周四</h2>
 <p>逃课去了计科的课。晚上锻炼，感觉一天的时间还是荒废了一大半。跟室友一路上聊了不少，又开始纠结到底是出国还是考研了。如果认真补学分说不定也有机会。烦躁。<br>
 没做什么事情，不过感觉下周开始就是真的忙起来认真起来进入状态的时候了。</p>
+<h2 id="925-周五">9.25 周五</h2>
+<p>中午吃了外卖所以晚上加练一次。剪了指甲。自己写了一遍BFS的题目，大概花了20min。裸的板子感觉还是相对比较熟练。明天他们比赛要是能给我看看题就好了。<br>
+那个小姑娘还是紧追不舍。好麻烦。</p>
 ]]></content>
     </entry>
     <entry>
