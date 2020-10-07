@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-10-06T16:53:06.729Z</updated>
+    <updated>2020-10-07T16:32:25.625Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.10.7]]></title>
+        <id>https://andyblocker.github.io/post/2020107/</id>
+        <link href="https://andyblocker.github.io/post/2020107/">
+        </link>
+        <updated>2020-10-07T16:29:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>第四十一周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第四十一周摘要。</p>
+<!-- more -->
+<h2 id="107-周三">10.7 周三</h2>
+<p>放假第七天。没有搞学习，中午去取镜子结果在寄快递的路上碎了，还好和店家说明了之后补发了快递。下午桌子也来了，四五个人吃力地从校门口抬回宿舍又折腾了大半个小时才装好。晚上吃的外卖。一下午除了装桌子就是在录歌，结果一个满意的版本也没有。有点烦躁。<br>
+晚上的时间基本浪费了。原本可以看书的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.9.30-10.6]]></title>
         <id>https://andyblocker.github.io/post/2020930/</id>
@@ -458,46 +473,6 @@ void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
 <li>在边缘不易产生损失；</li>
 </ul>
 <p>但是，该算法的复杂度较高，为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>N</mi><msup><mi>D</mi><mn>2</mn></msup><msup><mi>d</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(ND^2d^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，其中N是图像包含的像素数量，D是搜索区域宽度，d是邻域宽度，因此运行时消耗的时间非常多。而通过对代码的分析可知，计算邻域之间的欧氏距离时，有大量的数据被重复计算了。因此可以使用二维前缀和的方法预处理图像，这样在计算欧式距离的过程中时间复杂度将下降为常数，在少量提高内存开销的情况下有效地优化了算法的复杂度。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.8.5-8.11]]></title>
-        <id>https://andyblocker.github.io/post/202085/</id>
-        <link href="https://andyblocker.github.io/post/202085/">
-        </link>
-        <updated>2020-08-05T13:56:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>第三十二周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第三十二周摘要。</p>
-<!-- more -->
-<h2 id="85-周三">8.5 周三</h2>
-<p>上午上课讲的快速傅里叶和各种其他变换根本没有听，不过花了一天时间算是调出了可以用的NLM去噪算法，算是我用OpenCV做的第一个有实际意义的项目？之前可以说是抄都抄歪来，整个卷积核算方差的时候的方法完全都是错的。看到别人博客里的动图才想明白为什么我的图像会有那么明显的重影。<br>
-不过最后改出来的这个代码和原来的代码应该有很大的区别了，整个对面用指针操作的东西我全部都用ptr+下标访问取代了，我觉得我这么写的可读性会高很多。交给老师看以后被要求按照正式论文的格式写一篇报告然后下个星期再找时间具体交流。想了想写论文果然还是得用Markdown，会在博客上写一份吧。可能是我博客中第一篇和真正技术——哪怕是过时并且古老的——有关的内容？<br>
-又想到专业的问题。开学的时间还是变数很多。最好是在集训结束以后每天都能复习数分的内容，这门课的成绩必须高一点。不过关于开学时间的说法现在也到处都是，做最坏的打算总是没错的。<br>
-键盘的手感又出现了很明显的变化，但是除了空格键经常歪以外其他的原因自己又找不到。明天修一下指甲。</p>
-<h2 id="86-周四">8.6 周四</h2>
-<p>搞定了实验报告，并且找到了有重影的问题——权值计算的时候count变量忘记改了，导致实际处理的时候权值分配错误。改完的实现视觉效果上已经非常接近自带的fastNLmeansDenoising了，感觉还不错。<br>
-可能还是得准备出国的问题吧。</p>
-<h2 id="87-周五">8.7 周五</h2>
-<p>彻底无所事事的一天。翘了暑期集训的课——这段时间暂时不想上了。从明天开始慢慢准备数分考试的事情。突然改成线上考试基本就是在说九月份回去也很艰难吧。线上考试会是什么形式也不清楚。<br>
-一下子失去动力以后人都颓废起来了。</p>
-<h2 id="88-周六">8.8 周六</h2>
-<p>把电脑搬开复习数分。结果一整天实际上投入学习的时间并不多。心里的想法一个接一个，总是静不下心来。又想起社会实践活动的事情，到现在为止也只知道有一个人开始了然后交上了一些基本不能用的内容。和颜悦色劝回去再改改以后更加烦躁了。不过看起来这边好像不是那么紧急的事情，昨天找到的学校文件最终确认下来应该是只要能把学分凑齐六个就可以，这么看来只要多参加各种比赛也能够抵掉社会实践。可能是这样吧。<br>
-实验报告交给老师以后就没有任何回应了。不过说的是下周约时间的话，耐心等待吧。<br>
-感觉这个从每日干了什么事情的摘要记录逐渐变成每天发牢骚和有想法的事情有哪些了。以后还是多写点东西吧。</p>
-<h2 id="89-周日">8.9 周日</h2>
-<p>彻底失去动力参加任何事情的一天。下午打开了比赛的页面调了两个题但是不想交上去。今天早点休息吧，明天开始继续学数分。<br>
-在下面散步的时候想了一大堆有的没的的事情，不想写在这里。至少从明天开始的一两个星期里不要再发牢骚或者怎么样了吧。<br>
-仔细一看似乎是“下周”了，还得准备和老师聊的事情。但是以后的各种事情究竟会怎么样完全想不明白，什么路都觉得走不通。不过又报有无时无刻不觉得自己是幼稚而无理由的思考的人， 以至于最后无法得出任何结论。走一步看一步吧。至少先承认自己的平庸。</p>
-<h2 id="810-周一">8.10 周一</h2>
-<p>老师倒是准时，说“下周”聊聊今天就来了。算是给了不少学习的资料，至少有个方向知道该做什么了。不像自己学的时候只有一本书和整个网络上各种杂七杂八的东西。还要求复现一下之前的两篇论文，这段时间抽时间搞了好了。<br>
-今天效率还算不错，算是巩固了一下之前学的两个单元，做了一些相关的题目，知道怎么考了。但是剩下的时间只剩十天了，接下来的内容难度比现在高不少，不知道能不能搞完。<br>
-上午例行查成绩的时候发现又出了几门成绩，算下来现在的平均分已经有73了，数分不拖后腿的话应该有比较大的机会学计算机了。希望是这样。<br>
-照常跑步了。各种意义上都得更快一点对自己更严格一点了。</p>
-<h2 id="811-周二">8.11 周二</h2>
-<p>今天效率也许还行？总还算做了不少题。感觉一年下来计算能力完全不行了，今天算错了大量的东西，完完全全地手生了。这段时间多做些题目把手感找回来吧。明天开始还是得做一下后面的内容，不能在一个地方耽误太久的时间。<br>
-到处都在传一份不知道真假但是看起来很像是真的的ppt，大概28号会回学校？不知道后面的诸如小学期/军训之类的事情会怎么安排。<br>
-开始休息以后就一直在打舟了。还好这个复刻不怎么花时间。明天开始做题的速度和量都得多一点快一点。</p>
 ]]></content>
     </entry>
 </feed>
