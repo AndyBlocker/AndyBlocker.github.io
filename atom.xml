@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-10-13T16:39:39.558Z</updated>
+    <updated>2020-10-14T16:54:34.018Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.10.14]]></title>
+        <id>https://andyblocker.github.io/post/20201014/</id>
+        <link href="https://andyblocker.github.io/post/20201014/">
+        </link>
+        <updated>2020-10-14T16:15:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>第四十二周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第四十二周摘要。</p>
+<!-- more -->
+<h2 id="1014-周三">10.14 周三</h2>
+<p>工训楼学电焊，比想象中的有意思一些。但是中间用焊丝的时候发出来的奇怪味道有点刺激性的感觉，闻久了头有点晕。成绩还算可以，就是同组就有比我高的，没拿第一。中间买了一张GIN的演奏会票，十一月最后一个周六的，可以把琴带过去签名。<br>
+小姑娘感冒了，给她点了杯姜茶又寄了点茶颜，感觉一个人吃独食不太好所以给全寝的人都点了。还因为记错了人数多点了两份，不过无所谓了。最近天气确实冷下来了，早晚的时候四五度还是有点顶不住，可能要弄一件厚一点的外套之类的穿。但是这个月确实不怎么想花钱了，莫名其妙手头又少了两千多，而我完全没有意识到这些钱是怎么花掉的。<br>
+晚上沟通与人生的课的人数多得离谱，最后到的时候已经没有位置坐下了。听了一节课走了，也没有说什么期末考核之类的事情。回来以后慢慢悠悠和小姑娘听着歌写了几道大物作业，一天又结束了。好像有什么事情忘记写了，目前姑且就这样吧。<br>
+如果有意识地去控制的话，键盘打字的声音还是可以控制在一个能够接受的范围里的。键盘的事情在短时间里就不要再考虑了，至少下一把键盘的钱得是自己挣来的。每到这个时候就特别地想挣钱，想快速地通过什么方法赚到不能支持生活但是作为零花钱足够充裕的金额。然而实际上这种方法是几乎不存在的。要么安安心心做好自己目前该做的事情，顺便改善一下自己的消费习惯；要么就得好好提升某个技能，让自己真正地拥有能够成为金钱来源的东西。两者似乎都挺困难的。在闲暇时间里试试看吧，小目标是日收入大于五十元，虽然对于学生而言这个数值实际上非常夸张了。这个时候又后悔起来奖学金的事情。<br>
+最近总有一种今年要过完了的感觉，尤其是看着这个四十二周的数字。但是从月来看似乎还是金秋。北京的秋天真的很冷。<br>
+窗帘明天到了，遮上以后能让我写这个的时候不再需要考虑后面有没有人会关注到这种对于正常大学生而言显得有点奇怪的行为了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.10.7-10.13]]></title>
         <id>https://andyblocker.github.io/post/2020107/</id>
@@ -356,147 +375,6 @@
 <h2 id="818-周二">8.18 周二</h2>
 <p>买手机支架，上午写了一张数学试卷但是对的不多。感觉现在整个的情况是，解题方法已经基本了解了了，但是因为做题做的太少导致什么都不熟练什么都算不对。<br>
 返校的通知来了。总算是可以回去了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[非局部均值去噪算法的实践]]></title>
-        <id>https://andyblocker.github.io/post/NLM/</id>
-        <link href="https://andyblocker.github.io/post/NLM/">
-        </link>
-        <updated>2020-08-06T01:25:41.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>摘要：本文主要记录了一次使用C++以及OpenCV配套库，初步实现论文《A non-local algorithm for image denoising》中介绍的非局部均值去噪算法，并对这一实现的效果进行评估与改进的过程。</p>
-</blockquote>
-<h2 id="0-引言">0 引言</h2>
-<p>现代电子设备拍摄和传输图像的过程中将会受到噪声的影响，因此去噪是图像处理过程中不可缺少的一环。针对图像去噪问题，Antoni Buades等人在2005年发表的论文《A non-local algorithm for image denoising》中提出了一种名为非局部均值去噪的算法，本文是对复现论文中算法过程的记录。</p>
-<h2 id="1-实验原理">1 实验原理</h2>
-<p>论文中，作者使用以下方法定义了非局部均值去噪算法：</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mi>L</mi><mo>[</mo><mi>v</mi><mo>]</mo><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>∈</mo><mi>I</mi></mrow></munder><mi>w</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mi>v</mi><mo>(</mo><mi>j</mi><mo>)</mo><mspace linebreak="newline"></mspace><mi>w</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>i</mi></msub><mo>)</mo><mo>−</mo><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>j</mi></msub><mo>)</mo><mi mathvariant="normal">∣</mi><msubsup><mi mathvariant="normal">∣</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>a</mi></mrow><mn>2</mn></msubsup></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mrow></msup><mspace linebreak="newline"></mspace><mi>Z</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>i</mi></msub><mo>)</mo><mo>−</mo><mi>ν</mi><mo>(</mo><msub><mi>N</mi><mi>j</mi></msub><mo>)</mo><mi mathvariant="normal">∣</mi><msubsup><mi mathvariant="normal">∣</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>a</mi></mrow><mn>2</mn></msubsup></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">NL[v](i)=\sum_{j\in I}w(i,j)v(j)\\w(i,j)=\frac{1}{Z(i)}e^{-\frac{||\nu(N_{i})-\nu(N_{j})||_{2,a}^2}{h^{2}}}\\Z(i)=\sum_{j}e^{-\frac{||\nu(N_{i})-\nu(N_{j})||_{2,a}^2}{h^{2}}}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault">L</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.480449em;vertical-align:-1.430444em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.8556639999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">∈</span><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.430444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.45553em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.51953em;"><span style="top:-3.5195300000000005em;margin-right:0.05em;"><span class="pstrut" style="height:3.06611em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5230142857142859em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.7741285714285717em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mtight">∣</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.31472em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5091600000000001em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mord mtight">∣</span><span class="mord mtight"><span class="mord mtight">∣</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-2.208em;margin-left:0em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">a</span></span></span><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.63088em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.933307em;vertical-align:-1.413777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.050005em;"><span style="top:-1.8723309999999997em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.413777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.51953em;"><span style="top:-3.5195300000000005em;margin-right:0.05em;"><span class="pstrut" style="height:3.06611em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5230142857142859em;"><span style="top:-2.5061857142857145em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9384399999999999em;"><span style="top:-2.93844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.7741285714285717em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mtight">∣</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.31472em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.06366em;">ν</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3448em;margin-left:-0.10903em;margin-right:0.1em;"><span class="pstrut" style="height:2.65952em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5091600000000001em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mord mtight">∣</span><span class="mord mtight"><span class="mord mtight">∣</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.04844em;"><span style="top:-2.208em;margin-left:0em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight"><span class="mord mtight">2</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">a</span></span></span><span style="top:-3.04844em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">2</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.63088em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49381428571428565em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>即，使用欧式距离衡量邻域之间的相似度，实际图像的每一个像素点的值为与其邻域详尽的额所有像素点的加权平均值之和。</p>
-<h2 id="2-实验过程">2 实验过程</h2>
-<p>本次实验使用的示例图像如下：<img src="https://andyblocker.github.io/post-images/1596700352291.png" alt="" loading="lazy"><br>
-对于一张基本不含有噪点的图像，我们首先使用如下方法向图像添加高斯噪点和椒盐噪点：</p>
-<pre><code class="language-C++">void addNoiseSoltPepperMono(Mat&amp; src, Mat&amp; dest, double per) {
-  cv::RNG rng;
-#pragma omp parallel for
-  for (int j = 0; j &lt; src.rows; j++) {
-  	uchar* s = src.ptr(j);
-  	uchar* d = dest.ptr(j);
-  	for (int i = 0; i &lt; src.cols; i++) {
-  		double a1 = rng.uniform((double)0, (double)1);
-  		if (a1 &gt; per)d[i] = s[i];
-  		else {
-  			double a2 = rng.uniform((double)0, (double)1);
-  			if (a2 &gt; 0.5)d[i] = 0;
-  			else d[i] = 255;
-  		}
-  	}
-  }
-}
-
-void addNoiseMono(Mat&amp; src, Mat&amp; dest, double sigma) {
-  Mat s;
-  src.convertTo(s, CV_16S);
-  Mat n(s.size(), CV_16S);
-  randn(n, 0, sigma);
-  Mat temp = s + n;
-  temp.convertTo(dest, CV_8U);
-}
-
-void addNoise(Mat&amp; src, Mat&amp; dest, double sigma, double sprate = 0.0) {
-  	addNoiseMono(src, dest, sigma);
-      addNoiseSoltPepperMono(dest, dest, sprate);
-  	return;
-}
-</code></pre>
-<p>使用上述代码添加噪点后的图片效果如下：<img src="https://andyblocker.github.io/post-images/1596700768690.png" alt="" loading="lazy"><br>
-根据论文介绍的实验原理，复现的代码如下：</p>
-<pre><code class="language-C++">void nlFliter(Mat&amp; src, Mat&amp; dst, int searchBoxSize, int kernelSize, double h)
-{
-	dst = Mat::zeros(src.size(), src.type());
-	int halfSearchSize = searchBoxSize / 2, halfKernelSize = kernelSize / 2;//锚点左右宽度
-	int D = kernelSize * kernelSize;//搜索范围内的元素个数
-	double div = 1.0 / D;
-	int srcSize = src.rows * src.cols;//图像总像素数量
-	int tD = searchBoxSize * searchBoxSize;//邻域内像素数量
-	double tdiv = 1.0 / tD;//归一化
-
-	int BorderSize = halfKernelSize + halfSearchSize;//拓展边框宽度
-	Mat exSrc;//增广后图像
-	copyMakeBorder(src, exSrc, BorderSize, BorderSize, BorderSize, BorderSize, cv::BORDER_DEFAULT);
-
-	vector&lt;double&gt; weight(srcSize);//各点的权重
-	int emax = 0;
-	for (int i = 0; i &lt; srcSize; i++)
-	{
-		double v = exp(max(i + 2.0 / h, 0.0) * -1.0 / (h * h));
-		weight[i] = v;
-		if (v &lt; 0.001)
-		{
-			emax = i;
-			break;
-		}
-	}
-	for (int i = emax; i &lt; srcSize; i++)
-		weight[i] = 0;
-	int cnt = 0;
-#pragma omp parllel for
-	for (int i = BorderSize; i &lt; src.rows + BorderSize - 1; i++)
-	{
-		vector&lt;int&gt;ww(D);//邻域方差
-		vector&lt;double&gt;nw(D);//权重
-		for (int j = BorderSize; j &lt; src.cols + BorderSize - 1; j++)//对于原图的任意一个像素
-		{
-			cnt++;
-			if (cnt % 200 == 0)
-				cout &lt;&lt; 100.0 * cnt / srcSize &lt;&lt; '%' &lt;&lt; endl;
-			//(i,j)为正在处理的像素
-			double tweight = 0;
-			for (int k = -halfKernelSize, count = 0; k &lt;= halfKernelSize; k++)
-				for (int l = -halfKernelSize; l &lt;= halfKernelSize; l++)//对于搜索范围内的任意一个像素(i+k,j+l)
-				{
-					int e = 0;
-					for (int m = -halfSearchSize; m &lt;= halfSearchSize; m++)
-						for (int n = -halfSearchSize; n &lt;= halfSearchSize; n++)//计算searchBox内的(i+k+m,j+l+n)
-							e += (exSrc.ptr(i + m)[j + n] - exSrc.ptr(i + k + m)[j + l + n]) * (exSrc.ptr(i + m)[j + n] - exSrc.ptr(i + k + m)[j + l + n]);
-					int ediv = e * tdiv;//均一化后的权重大小
-					ww[count++] = ediv, tweight += weight[ediv];
-				}
-			if (tweight == 0)
-			{
-				for (int k = 0; k &lt; D; k++)
-					nw[k] = 0;
-				nw[D / 2 + 1] = 1;
-			}
-			else {
-				double itweight = 1.0 / tweight;
-				for (int k = 0; k &lt; D; k++)
-					nw[k] = weight[ww[k]] * itweight;
-			}
-			double v = 0;
-			int count = 0;
-			for (int l = -halfKernelSize; l &lt;= halfKernelSize; l++)
-				for (int k = -halfKernelSize; k &lt;= halfKernelSize; k++)
-					v += exSrc.ptr(i + l)[j + k] * nw[count++];
-			dst.ptr(i - BorderSize)[j - BorderSize] = v;
-		}
-	}
-}
-</code></pre>
-<p>按照论文中的数据设置，将邻域大小（searchBoxSize）设为7，搜索域大小（kernelSize）设为21，处理后得到的图像效果如下：<br>
-<img src="https://andyblocker.github.io/post-images/1596703732723.png" alt="" loading="lazy"><br>
-可以看到，图片中的噪点较降噪之前有了一定程度的改善，但是细节与纹理结构保存的并不好。并且图像上出现了大面积的斑纹，推测是对权重的计算仍然存在一定的问题。计算MSE也可发现，该实现所得到得图像MSE高达114，远高于原文中处理Lena图像时的68，接近原文中举出的其他几种本地的降噪算法（GF：120；AF：114；TVF：129）。可见这种实现由于其中仍存在的问题，相较于原论文的实现仍然效率低、效果差。<br>
-调用OpenCV中自带的fastNlMeansDenoising()并将参数设置至与实现一致，所得效果图如下：<br>
-<img src="https://andyblocker.github.io/post-images/1596703740284.png" alt="" loading="lazy"><br>
-标程与实现在视觉效果上差距较小，但在相同参数下标程的RME仅为66，这证明文中的实现仍然存在较大的问题。同时，实现的运行时间远长于标程，在对Lena图像采用文中参数进行处理的情况下，文中实现的运行时间大约在五分钟左右，而标程的运行时间仅为约三十秒。</p>
-<h2 id="3-结论与展望">3 结论与展望</h2>
-<p>在对论文中介绍的其他几种本地降噪算法进行对比后，可以得到非局部均值去噪算法的优点如下：</p>
-<ul>
-<li>充分利用了图像中的信息，能够较多地保存图像的细节特征；</li>
-<li>在边缘不易产生损失；</li>
-</ul>
-<p>但是，该算法的复杂度较高，为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>N</mi><msup><mi>D</mi><mn>2</mn></msup><msup><mi>d</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(ND^2d^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，其中N是图像包含的像素数量，D是搜索区域宽度，d是邻域宽度，因此运行时消耗的时间非常多。而通过对代码的分析可知，计算邻域之间的欧氏距离时，有大量的数据被重复计算了。因此可以使用二维前缀和的方法预处理图像，这样在计算欧式距离的过程中时间复杂度将下降为常数，在少量提高内存开销的情况下有效地优化了算法的复杂度。</p>
 ]]></content>
     </entry>
 </feed>
