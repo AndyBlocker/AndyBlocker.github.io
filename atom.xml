@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-10-20T16:08:27.500Z</updated>
+    <updated>2020-10-21T15:56:52.999Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.10.21]]></title>
+        <id>https://andyblocker.github.io/post/20201021/</id>
+        <link href="https://andyblocker.github.io/post/20201021/">
+        </link>
+        <updated>2020-10-21T15:50:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>第四十三周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第四十三周摘要。</p>
+<!-- more -->
+<h2 id="1021-周三">10.21 周三</h2>
+<p>工训楼一整天。早上起来还闹了个笑话，站在后门的位置一直等着，连带着十几个人跟着我一起等。结果前门是开的。“电火花线切割”，实际上让人操作的内容基本只需要做CAD的绘图和全自动的操作机器、按几个按钮点几下鼠标就能马上实现之前别人需要花费非常大的力气也难以完成的工作。创意绘图的时候没什么想法，随便画了几个六边形之类的东西交差。下午操作机器的时候碰巧老师拿我的做示范，一整天基本就都在看手机和打发时间的过程中过去了。<br>
+晚上原本想着锻炼和作业至少得有一个，结果因为感冒了状态不好连歌都没录就摸鱼了。喝了点药。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.10.14-10.20]]></title>
         <id>https://andyblocker.github.io/post/20201014/</id>
@@ -368,40 +383,6 @@
 <h2 id="825-周二">8.25 周二</h2>
 <p>开了新活动肝太狠导致忘记写这个了。上午发了视频以后就没干什么事情，下午开了新活动以后就一直在打游戏。<br>
 数分出分了，现在平均分到了74.4，按照上个学期的情况来看的话大概是有希望选专业了。至少是希望。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.8.12-8.18]]></title>
-        <id>https://andyblocker.github.io/post/2020812/</id>
-        <link href="https://andyblocker.github.io/post/2020812/">
-        </link>
-        <updated>2020-08-12T14:08:19.000Z</updated>
-        <summary type="html"><![CDATA[<p>第三十三周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第三十三周摘要。</p>
-<!-- more -->
-<h2 id="812-周三">8.12 周三</h2>
-<p>今天效率还可以，白天把整个曲线积分章末的习题做完了，有一种我好像已经完全掌握了的感觉。做题的正确率也还不错，就是用公式的时候还是不怎么熟练。不过相信做几套试卷以后应该就好很多了。<br>
-要开始整理暑期社会实践相关的各种东西了，催了几个人交各类东西，从明天开始晚上的时间应该要用来写各种报告啊啥的了——虽然是今天就准备做这个事情但是最后又变得怠惰了。<br>
-照常跑步。坚持下去提高自己的效率吧。</p>
-<h2 id="813-周四">8.13 周四</h2>
-<p>结果社会实践今天该差一份的还是没交，到了晚上也没开始干活。算是看完了级数部分，除了最后一部分关于傅里叶级数的展开只记了一点最简单的东西。算是做了一点点试卷，从明天开始多写一点了。<br>
-中午睡太久了。</p>
-<h2 id="814-周五">8.14 周五</h2>
-<p>主要干的事情也就是晚上搞完了所有跟社会实践相关的东西，加起来算是小一万字了。白天还是看看卷子写写点题目，什么都不熟练。<br>
-这一段时间突然就没写这个了。</p>
-<h2 id="815-周六">8.15 周六</h2>
-<p>一大早突然说回老家，下午写写卷子就休息了。<br>
-换了一只猫，但是小虫子太多了，晚上睡觉都能听到虫子撞在玻璃上的声音。身上开始过敏。</p>
-<h2 id="816-周日">8.16 周日</h2>
-<p>一整天几乎无所事事。想写卷子发现忘记带笔记本充电器了，以这个为借口玩了一整天。<br>
-明天回去。</p>
-<h2 id="817-周一">8.17 周一</h2>
-<p>每次几天忘记写以后补上的代价就是写的特别草。本来就没什么值得记下来的情况下再忘记一部分事情根本就没办法写。<br>
-回了家但还是没怎么搞学习。打印了答题卡和考试说明书。</p>
-<h2 id="818-周二">8.18 周二</h2>
-<p>买手机支架，上午写了一张数学试卷但是对的不多。感觉现在整个的情况是，解题方法已经基本了解了了，但是因为做题做的太少导致什么都不熟练什么都算不对。<br>
-返校的通知来了。总算是可以回去了。</p>
 ]]></content>
     </entry>
 </feed>
