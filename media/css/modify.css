@@ -1,0 +1,70 @@
+.mdui-theme-layout-dark #drawer {
+    background-color: #424242;
+}
+#drawer {
+    background-color: #fff;
+}
+
+.mdui-theme-layout-dark a.mdui-chip {
+    color: #fff;
+}
+a.mdui-chip {
+    color: #000;
+}
+
+.mdui-theme-layout-dark .mdui-card-media,
+.mdui-theme-layout-dark img {
+    filter:brightness(.8);
+}
+
+.mdui-theme-layout-dark .pagination-container a {
+    color: #fff;
+}
+.pagination-container a:before {
+    width: 0;
+}
+
+html {
+    scrollbar-color: rgba(0,0,0,.5) #9E9E9E;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #9E9E9E;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+}
+
+.lightense-backdrop {
+    background-color: rgba(0,0,0,.4) !important;
+    backdrop-filter: none !important;
+}
+figure {
+    outline: none;
+}
+
+.mdui-theme-layout-dark .hljs {
+    padding: 0 !important;
+}
+
+.mdui-theme-layout-dark#post nav a {
+    text-decoration: none;
+    color: #fff;
+}
+#post nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#drawer .spread {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#post .mdui-card-media img {
+    max-height: 75vh;
+}

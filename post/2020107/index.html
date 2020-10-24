@@ -1,106 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>2020.10.7-10.13 | AndyBlocker</title>
-<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1603502738799">
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-<link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/modify.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/github-gist.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/railscasts.min.css">
 </head>
-<body>
-<div class="main gt-bg-theme-color-first">
-    <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            AndyBlocker
+<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://andyblocker.github.io" class="mdui-typo-headline">AndyBlocker</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
         </div>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-    </div>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
+        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
+        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+        
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
 </nav>
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    2020.10.7-10.13
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2020-10-08 ·
-                    </time>
-                    
-                        <a href="https://andyblocker.github.io/tag/MynfIM62U/" class="post-tags">
-                            # 日常
-                        </a>
-                    
-                </div>
-                <div class="post-content">
-                    <p>第四十一周摘要。</p>
+
+
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    <section class="mdui-card">
+        
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">2020.10.7-10.13</div>
+            <div class="mdui-card-primary-subtitle">发布于 2020-10-08，包含标签 <a href="https://andyblocker.github.io/tag/MynfIM62U/" class="post-tags"># 日常</a>。</div>
+        </div>
+        <div class="mdui-card-content"><p>第四十一周摘要。</p>
 <!-- more -->
 <h2 id="107-周三">10.7 周三</h2>
 <p>放假第七天。没有搞学习，中午去取镜子结果在寄快递的路上碎了，还好和店家说明了之后补发了快递。下午桌子也来了，四五个人吃力地从校门口抬回宿舍又折腾了大半个小时才装好。晚上吃的外卖。一下午除了装桌子就是在录歌，结果一个满意的版本也没有。有点烦躁。<br>
@@ -129,88 +75,39 @@
 <p>上课。状态不算好，今天自己没有学到什么东西。倒是老师还是一如既往的慢进度，还是回想起来昨天数电开始的内容，教材上面的东西极其得混乱完全没有考虑过读者的感受，大量地罗列无关信息摆在一起，老师能不能把这一块内容讲明白也还不是很清楚。可能晚一点还得自己找一下网课之类的内容看一下，补充一下这方面更加系统的内容。网球课老师给人一种傲气的感觉，据说是注重跑步但是总体给分都还不错。不过这次我是确实很想把网球入个门，看起来就很有趣。跑步之后看了一小会别人踢足球，下个学期选足球课好了。就是得准备一双鞋面厚一点硬一点的鞋。<br>
 仔细想想，前几天的纠结最终的核心还是在于：我不确定自己的感受是否和常识/共有知识中的名词相匹配。但实际上这个问题并不存在。我的想法都是私密的、富有个人性的，也是不可能让其他人以一种直接的方式感受到的。一切体验经过转述以后都大幅度失真，转变为某种失去细节只对少量内容进行抽象的概括甚至是片面的描述。既然如此，还不如完全地丢开这种尝试对感受进行对比、分类的行为，即，我的感受不需要以其他人的感受作为参考。注重当前的体验，注重对这种体验的保留，注重这种体验给自己带来的愉快或者不愉快，将所有的不确定的情感与理念解构成最简单的基本元素，忠实地面对这种感情而不再去担心它是否是“大众意义”上的某个名词或者什么值得歌颂或唾弃的东西。如果我认为这是好的，那这就是一种正面的情感。将精力放在体验上。大胆面对自己的情感、不再躲躲藏藏也是很重要的能力。<br>
 中午在南三和室友一起吃饭的时候对方说了一句“该死却鲜活的生命”，非常有趣的说法所以希望能在这里记录下来。从“原罪”或者各种世俗意义上的对人的最高要求而言，我想应该每个人——至少是我——都能被称为“该死”的。现实生活的人总是做出各种各样的错误，展示各种各样的贪婪嫉妒或者什么其他的宗教和社会风俗都认为足够“该死”的东西，但是就是这种“该死”的东西才让人、才让我成为一个“鲜活”的人，成为一个具有个体性的个题，而不是世俗烂好人模板或者宗教圣人模板里面制造出来的社会螺丝钉。不过这种理解并不符合说出话的时候的情况——这个词被用来描述一只不知道被打到哪里去了的蚊子。在人类意义上具有真正的原罪（是一只对人有害而且让人心烦的害虫），却又鲜活地四处游荡制造出让人烦躁的嗡嗡声，无忧无虑但是最后也死得不明不白。很有趣，所以在这里记录下来。如果有机会，我想让某个小说人物说出这句话。</p>
-
-                </div>
-            </article>
+</div>
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="https://andyblocker.github.io/images/avatar.png">
+            <div class="mdui-card-header-title">AndyBlocker</div>
+            <div class="mdui-card-header-subtitle">直抵群星。</div>
         </div>
+    </section>
 
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://andyblocker.github.io/post/2020930/" class="post-title gt-a-link">
-                    2020.9.30-10.6
-                </a>
-            </div>
-        
+      
+</main>
 
-        
-            <span id="/post/" class="leancloud_visitors" data-flag-title="2020.10.7-10.13">
-                <em class="post-meta-item-text">阅读量 </em>
-                <i class="leancloud-visitors-count">0</i>
-            </span>
-        
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    <a href="https://andyblocker.github.io/post/20201014/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>2020.10.14-10.20</a>
+    <a href="https://andyblocker.github.io/post/2020930/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">2020.9.30-10.6<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
+</nav>
 
-        
-
-        
-            <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
-
-<style>
-	div#vcomments{
-		width:100%;
-		max-width: 1000px;
-		padding: 2.5%
-	}
-</style>
-
-
-	<div id="vcomments"></div>
-
-<script>
-	new Valine({
-		el: '#vcomments',
-		appId: 'vVTaWztaL2aCumykED0Y5Sm2-gzGzoHsz',
-		appKey: 'u5qtxluDANHVNqL5BTkJW8vq',
-		avatar: 'mp',
-		pageSize: 5,
-		recordIp: true,
-		placeholder: 'Just Go Go',
-		visitor: true,
-	});
-</script>
-        
-
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">直抵群星。</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </div>
-    <div class="footer-info">
-        
-    </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a></a>
-    </div>
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    
 </div>
 
+<script src="https://andyblocker.github.io/media/js/jquery.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/mdui.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/modify.js"></script>
+<script src="https://andyblocker.github.io/media/js/highlight.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/lightense.min.js"></script>
 <script>
-    hljs.initHighlightingOnLoad()
+// 初始化-高亮代码
+hljs.initHighlightingOnLoad();
+// 初始化-文章图片放大
+window.addEventListener('load', function () {
+    Lightense('#post .mdui-card-content img');
+}, false);
 </script>
 
-    </div>
-</div>
 </body>
 </html>

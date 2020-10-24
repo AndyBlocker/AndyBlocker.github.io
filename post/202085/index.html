@@ -1,106 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>2020.8.5-8.11 | AndyBlocker</title>
-<link rel="shortcut icon" href="https://andyblocker.github.io/favicon.ico?v=1603502738799">
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-<link rel="stylesheet" href="https://andyblocker.github.io/styles/main.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/modify.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/github-gist.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/railscasts.min.css">
 </head>
-<body>
-<div class="main gt-bg-theme-color-first">
-    <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            AndyBlocker
+<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://andyblocker.github.io" class="mdui-typo-headline">AndyBlocker</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
         </div>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-    </div>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
+        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
+        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+        
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
 </nav>
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    2020.8.5-8.11
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2020-08-05 ·
-                    </time>
-                    
-                        <a href="https://andyblocker.github.io/tag/MynfIM62U/" class="post-tags">
-                            # 日常
-                        </a>
-                    
-                </div>
-                <div class="post-content">
-                    <p>第三十二周摘要。</p>
+
+
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    <section class="mdui-card">
+        
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">2020.8.5-8.11</div>
+            <div class="mdui-card-primary-subtitle">发布于 2020-08-05，包含标签 <a href="https://andyblocker.github.io/tag/MynfIM62U/" class="post-tags"># 日常</a>。</div>
+        </div>
+        <div class="mdui-card-content"><p>第三十二周摘要。</p>
 <!-- more -->
 <h2 id="85-周三">8.5 周三</h2>
 <p>上午上课讲的快速傅里叶和各种其他变换根本没有听，不过花了一天时间算是调出了可以用的NLM去噪算法，算是我用OpenCV做的第一个有实际意义的项目？之前可以说是抄都抄歪来，整个卷积核算方差的时候的方法完全都是错的。看到别人博客里的动图才想明白为什么我的图像会有那么明显的重影。<br>
@@ -130,88 +76,39 @@
 <p>今天效率也许还行？总还算做了不少题。感觉一年下来计算能力完全不行了，今天算错了大量的东西，完完全全地手生了。这段时间多做些题目把手感找回来吧。明天开始还是得做一下后面的内容，不能在一个地方耽误太久的时间。<br>
 到处都在传一份不知道真假但是看起来很像是真的的ppt，大概28号会回学校？不知道后面的诸如小学期/军训之类的事情会怎么安排。<br>
 开始休息以后就一直在打舟了。还好这个复刻不怎么花时间。明天开始做题的速度和量都得多一点快一点。</p>
-
-                </div>
-            </article>
+</div>
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="https://andyblocker.github.io/images/avatar.png">
+            <div class="mdui-card-header-title">AndyBlocker</div>
+            <div class="mdui-card-header-subtitle">直抵群星。</div>
         </div>
+    </section>
 
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://andyblocker.github.io/post/2020729/" class="post-title gt-a-link">
-                    2020.7.29-8.4
-                </a>
-            </div>
-        
+      
+</main>
 
-        
-            <span id="/post/" class="leancloud_visitors" data-flag-title="2020.8.5-8.11">
-                <em class="post-meta-item-text">阅读量 </em>
-                <i class="leancloud-visitors-count">0</i>
-            </span>
-        
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    <a href="https://andyblocker.github.io/post/NLM/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>非局部均值去噪算法的实践</a>
+    <a href="https://andyblocker.github.io/post/2020729/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">2020.7.29-8.4<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
+</nav>
 
-        
-
-        
-            <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
-
-<style>
-	div#vcomments{
-		width:100%;
-		max-width: 1000px;
-		padding: 2.5%
-	}
-</style>
-
-
-	<div id="vcomments"></div>
-
-<script>
-	new Valine({
-		el: '#vcomments',
-		appId: 'vVTaWztaL2aCumykED0Y5Sm2-gzGzoHsz',
-		appKey: 'u5qtxluDANHVNqL5BTkJW8vq',
-		avatar: 'mp',
-		pageSize: 5,
-		recordIp: true,
-		placeholder: 'Just Go Go',
-		visitor: true,
-	});
-</script>
-        
-
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">直抵群星。</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </div>
-    <div class="footer-info">
-        
-    </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://andyblocker.github.io/atom.xml" target="_blank">RSS</a></a>
-    </div>
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    
 </div>
 
+<script src="https://andyblocker.github.io/media/js/jquery.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/mdui.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/modify.js"></script>
+<script src="https://andyblocker.github.io/media/js/highlight.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/lightense.min.js"></script>
 <script>
-    hljs.initHighlightingOnLoad()
+// 初始化-高亮代码
+hljs.initHighlightingOnLoad();
+// 初始化-文章图片放大
+window.addEventListener('load', function () {
+    Lightense('#post .mdui-card-content img');
+}, false);
 </script>
 
-    </div>
-</div>
 </body>
 </html>
