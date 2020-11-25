@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://andyblocker.github.io/media/css/mdui.min.css">
 <link rel="stylesheet" href="https://andyblocker.github.io/media/css/modify.css">
 </head>
-<body id="index" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
 <header role="banner">
     <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
         <div class="mdui-toolbar">
@@ -37,28 +37,30 @@
 </nav>
 
 
-<main class="mdui-m-a-2 mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-xl-4 mdui-typo mdui-m-t-2">
+<main class="mdui-container mdui-m-t-2">
     
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://andyblocker.github.io/post/2020/">2020</a></div>
-                <div class="mdui-card-primary-subtitle">
-                    2020-01-01。
-                </div>
-            </div>
-            <div class="mdui-card-content"><blockquote>
-<p>希望能坚持下去吧。</p>
-</blockquote>
-</div>
-        </div>
-    </section>
 
+<section class="mdui-card">
+    <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">归档</div>
+    </div>
+    <div class="mdui-card-content">
+        
+            <h2 class="mdui-typo-display-1">2020</h2>
+            <article class="mdui-list">
+                
+                        
+                            <a href="https://andyblocker.github.io/post/2020/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">2020</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020-01-01</div></div></a>
+                        
+                
+            </article>
+        
+    </div>
+</section>
 </main>
 
 <nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
-    <a href="https://andyblocker.github.io/" mdui-tooltip="{content: '上一页', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button></a>
+    <a href="https://andyblocker.github.io/archives/" mdui-tooltip="{content: '上一页', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button></a>
     
 </nav>
 
@@ -69,22 +71,6 @@
 <script src="https://andyblocker.github.io/media/js/jquery.min.js"></script>
 <script src="https://andyblocker.github.io/media/js/mdui.min.js"></script>
 <script src="https://andyblocker.github.io/media/js/modify.js"></script>
-<script src="https://andyblocker.github.io/media/js/masonry.pkgd.min.js"></script>
-<script src="https://andyblocker.github.io/media/js/imagesloaded.pkgd.min.js"></script>
-<script>
-// 初始化-文章列表页面瀑布流。
-function masonry() {
-    // 初始化 masonry
-    $('.mdui-row-xs-1').masonry({
-        itemSelector: '.mdui-col',
-        horizontalOrder: true
-    });
-}
-masonry()
-$('.mdui-col').imagesLoaded( function() {
-    masonry()
-});
-</script>
 
 </body>
 </html>
