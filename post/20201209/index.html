@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
+<title>2020.12.9 | AndyBlocker</title>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/modify.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/github-gist.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/railscasts.min.css">
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
+<title>2020.12.9 | AndyBlocker</title>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://andyblocker.github.io/media/css/modify.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://andyblocker.github.io" class="mdui-typo-headline">AndyBlocker</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
+    </div>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
+        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
+        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+        
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
+</nav>
+
+
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    <section class="mdui-card">
+        
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">2020.12.9</div>
+            <div class="mdui-card-primary-subtitle">发布于 2020-12-09， <a href="https://andyblocker.github.io/tag/MynfIM62U/" class="post-tags"># 日常</a>。</div>
+        </div>
+        <div class="mdui-card-content"><p>第五十周摘要。</p>
+<!-- more -->
+<h2 id="129-周三">12.9 周三</h2>
+<p>前一天晚上上了点肝火，调队内的代码配置环境一直搞到三点钟突然发现第二天有实验，遂睡觉。早上将近九点钟才起床，匆匆忙忙浑浑噩噩赶去做实验。中午回来路上拿了家里买的橘子，没有想象中的好吃。不过总归是有了点维生素之类的健康摄取来源。大概是路上有点冻着了，中午吃饭的时候有点流清鼻涕，总觉得对桌的姑娘一直在向我投来不快的目光——哪怕我从来没有正视过一眼。最后实在不能忍受自己发出的声音匆匆扒拉了几口就倒掉了所有的饭。这大概也算死要面子活受罪了。<br>
+回去又睡了一下午觉，下午两点半左右开始干活到了五点钟的样子基本上实现了前半部分图像校正的问题：除了写的时候会出现莫名其妙的中途卡顿，不保存图片的情况下fps能从150+一下子掉到个位数。计划学习一下gprof的用法，正好给队内的代码做一下分析，看看还有哪里需要重构和优化的。不过现在遇上了新的问题：模板匹配的方法对大小不固定的图像好像会出现各种各样的问题，但是在网上找到的博客里面又有人言之凿凿“只要找到合适的模板做模板匹配比机器学习和SVM快得多”，之后得想办法研究一下他具体是怎么处理的。不过二值化的部分也还没有写，阈值方面的判断应该也还需要再处理一下。不过好在是至少本周的任务算是完成了，剩下的事情可以拖到应用光学考试结束再说。<br>
+应该是没睡够加上一下午真的就在干活，到了晚上一下子就怠惰了。什么事情也没干、只是背了个单词就混了一晚上。不知道应光的复习大概什么时候能走上正轨——如果时间不够到最后很有可能连题目都看不懂，我想我至少得把各种名词都熟悉一下、记住大部分的公式，不过能达到这个水平的话考试大概也没什么问题。至少还是得稍微努力一点。<br>
+中午和小姑娘闲扯聊到各种礼物的事情，可惜后面就一直在干活了。之前还有点迫不及待现在反而开始紧张了：信上的东西有太多想写的了。越来越想写小说。</p>
+</div>
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="https://andyblocker.github.io/images/avatar.png">
+            <div class="mdui-card-header-title">AndyBlocker</div>
+            <div class="mdui-card-header-subtitle">直抵群星。</div>
+        </div>
+    </section>
+
+      
+</main>
+
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    
+    <a href="https://andyblocker.github.io/post/20201202/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">2020.12.2-12.8<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
+</nav>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    
+</div>
+
+<script src="https://andyblocker.github.io/media/js/jquery.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/mdui.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/modify.js"></script>
+<script src="https://andyblocker.github.io/media/js/highlight.min.js"></script>
+<script src="https://andyblocker.github.io/media/js/lightense.min.js"></script>
+<script>
+// 初始化-高亮代码
+hljs.initHighlightingOnLoad();
+// 初始化-文章图片放大
+window.addEventListener('load', function () {
+    Lightense('#post .mdui-card-content img');
+}, false);
+</script>
+
+</body>
+</html>
