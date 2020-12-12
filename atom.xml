@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2020-12-11T16:42:24.350Z</updated>
+    <updated>2020-12-12T16:57:50.255Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, AndyBlocker</rights>
     <entry>
-        <title type="html"><![CDATA[2020.12.9-12.11]]></title>
+        <title type="html"><![CDATA[2020.12.9-12.12]]></title>
         <id>https://andyblocker.github.io/post/20201209/</id>
         <link href="https://andyblocker.github.io/post/20201209/">
         </link>
