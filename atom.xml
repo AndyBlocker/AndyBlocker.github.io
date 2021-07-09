@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andyblocker.github.io</id>
     <title>AndyBlocker</title>
-    <updated>2021-07-08T15:51:19.026Z</updated>
+    <updated>2021-07-09T17:08:11.976Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andyblocker.github.io"/>
     <link rel="self" href="https://andyblocker.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://andyblocker.github.io/images/avatar.png</logo>
     <icon>https://andyblocker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, AndyBlocker</rights>
+    <entry>
+        <title type="html"><![CDATA[2021.7.9]]></title>
+        <id>https://andyblocker.github.io/post/202179/</id>
+        <link href="https://andyblocker.github.io/post/202179/">
+        </link>
+        <updated>2021-07-09T17:04:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>第二十七周摘要。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第二十七周摘要。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021.7.2-7.8]]></title>
         <id>https://andyblocker.github.io/post/202172/</id>
@@ -107,17 +118,6 @@
         <summary type="html"><![CDATA[<p>第十八周摘要。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>第十八周摘要。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021.4.30-5.6]]></title>
-        <id>https://andyblocker.github.io/post/2021430/</id>
-        <link href="https://andyblocker.github.io/post/2021430/">
-        </link>
-        <updated>2021-04-30T19:02:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>第十七周摘要。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第十七周摘要。</p>
 ]]></content>
     </entry>
 </feed>
